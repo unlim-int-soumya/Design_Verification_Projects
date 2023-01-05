@@ -7,7 +7,7 @@
 `define SEL_LENGTH 4
 `endif
 
-module adder(
+module mux_16x1(
   input [`SEL_LENGTH-1:0] sel, 
   input [`IN_LENGTH-1:0]in,
   input rstn,
