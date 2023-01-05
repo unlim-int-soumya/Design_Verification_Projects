@@ -19,7 +19,7 @@ module testbench;
   end
 
   
-  adder u0 (
+  mux_16x1 u0 (
     .sel(_if.sel),
     .in(_if.in),
     .rstn(_if.rstn),
