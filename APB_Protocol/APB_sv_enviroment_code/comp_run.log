@@ -1,0 +1,16 @@
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+Start time: 12:19:18 on Jun 25,2022
+vlog -reportprogress 300 testbench.sv -l comp_run.log 
+-- Compiling module apb_slave
+-- Compiling package testbench_sv_unit
+-- Compiling interface apb_intf
+-- Compiling program apb_base_test
+-- Compiling module assertion
+-- Compiling module binding
+-- Compiling module top
+
+Top level modules:
+	binding
+	top
+End time: 12:19:18 on Jun 25,2022, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

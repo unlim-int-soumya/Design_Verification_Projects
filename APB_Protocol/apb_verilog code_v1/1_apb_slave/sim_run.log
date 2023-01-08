@@ -1,0 +1,109 @@
+# vsim -novopt top -l sim_run.log 
+# Start time: 01:00:32 on Jun 07,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing d:/M.TECH_PROJECT/APB_verilog_code/work.top
+# Loading work.top
+# Refreshing d:/M.TECH_PROJECT/APB_verilog_code/work.apb_slave
+# Loading work.apb_slave
+# ** Note: $finish    : testbench.v(101)
+#    Time: 465 ns  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at testbench.v line 101
+do run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 01:07:30 on Jun 07,2022
+# vlog -reportprogress 300 testbench.v -l comp_run.log 
+# -- Compiling module apb_slave
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 01:07:30 on Jun 07,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 01:07:31 on Jun 07,2022, Elapsed time: 0:06:59
+# Errors: 0, Warnings: 1
+# vsim -novopt top -l sim_run.log 
+# Start time: 01:07:31 on Jun 07,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing d:/M.TECH_PROJECT/APB_verilog_code/work.top
+# Loading work.top
+# Refreshing d:/M.TECH_PROJECT/APB_verilog_code/work.apb_slave
+# Loading work.apb_slave
+# ** Note: $finish    : testbench.v(101)
+#    Time: 465 ns  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at testbench.v line 101
+do run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 01:08:57 on Jun 07,2022
+# vlog -reportprogress 300 testbench.v -l comp_run.log 
+# -- Compiling module apb_slave
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 01:08:57 on Jun 07,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 01:08:57 on Jun 07,2022, Elapsed time: 0:01:26
+# Errors: 0, Warnings: 1
+# vsim -novopt top -l sim_run.log 
+# Start time: 01:08:57 on Jun 07,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing d:/M.TECH_PROJECT/APB_verilog_code/work.top
+# Loading work.top
+# Refreshing d:/M.TECH_PROJECT/APB_verilog_code/work.apb_slave
+# Loading work.apb_slave
+# ** Note: $finish    : testbench.v(101)
+#    Time: 465 ns  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at testbench.v line 101
+do run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 01:11:04 on Jun 07,2022
+# vlog -reportprogress 300 testbench.v -l comp_run.log 
+# -- Compiling module apb_slave
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 01:11:04 on Jun 07,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 01:11:04 on Jun 07,2022, Elapsed time: 0:02:07
+# Errors: 0, Warnings: 1
+# vsim -novopt top -l sim_run.log 
+# Start time: 01:11:04 on Jun 07,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing d:/M.TECH_PROJECT/APB_verilog_code/work.top
+# Loading work.top
+# Refreshing d:/M.TECH_PROJECT/APB_verilog_code/work.apb_slave
+# Loading work.apb_slave
+# ** Note: $finish    : testbench.v(101)
+#    Time: 465 ns  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at testbench.v line 101
+do run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 01:14:34 on Jun 07,2022
+# vlog -reportprogress 300 testbench.v -l comp_run.log 
+# -- Compiling module apb_slave
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 01:14:34 on Jun 07,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 01:14:35 on Jun 07,2022, Elapsed time: 0:03:31
+# Errors: 0, Warnings: 1
+# vsim -novopt top -l sim_run.log 
+# Start time: 01:14:35 on Jun 07,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing d:/M.TECH_PROJECT/APB_verilog_code/work.top
+# Loading work.top
+# Refreshing d:/M.TECH_PROJECT/APB_verilog_code/work.apb_slave
+# Loading work.apb_slave
+# ** Note: $finish    : testbench.v(101)
+#    Time: 465 ns  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at testbench.v line 101
+# End time: 01:21:37 on Jun 07,2022, Elapsed time: 0:07:02
+# Errors: 0, Warnings: 1

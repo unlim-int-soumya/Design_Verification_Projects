@@ -1,0 +1,399 @@
+# vsim -novopt top "+testname=test_wr_rd" -l sim_run.log 
+# Start time: 12:19:18 on Jun 25,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing d:/M.TECH_PROJECT/APB_sv_enviroment_code/work.top
+# Refreshing d:/M.TECH_PROJECT/APB_sv_enviroment_code/work.testbench_sv_unit
+# Loading sv_std.std
+# Loading work.testbench_sv_unit
+# Loading work.top
+# Refreshing d:/M.TECH_PROJECT/APB_sv_enviroment_code/work.apb_intf
+# Loading work.apb_intf
+# Refreshing d:/M.TECH_PROJECT/APB_sv_enviroment_code/work.apb_slave
+# Loading work.apb_slave
+# Refreshing d:/M.TECH_PROJECT/APB_sv_enviroment_code/work.apb_base_test
+# Loading work.apb_base_test
+# ** Warning: (vsim-8637) apb_bfm.sv(27): A modport ('bfm_mp') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /testbench_sv_unit File: apb_common.sv
+# ** Warning: (vsim-8637) apb_bfm.sv(45): A modport ('bfm_mp') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /testbench_sv_unit File: apb_common.sv
+# ** Warning: (vsim-8637) apb_mon.sv(10): A modport ('mon_mp') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /testbench_sv_unit File: apb_common.sv
+# testname=test_wr_rd
+# Agent:agent_no:2
+# Generator:agent_no=2
+# ............................
+# time=0: Generator: Data packet for write
+# paddr=059
+# pwdata=7d530ab3
+# pwrite=1
+# prdata=xxxxxxxx
+# pslverr=x
+# ............................
+# Generator:agent_no=2
+# ............................
+# time=0: Generator: Data packet for read
+# paddr=059
+# pwdata=99735cf2
+# pwrite=0
+# prdata=xxxxxxxx
+# pslverr=x
+# ............................
+# Driver:agent_no=2
+# ............................
+# time=0: Driver: Data packet received from generator
+# paddr=059
+# pwdata=7d530ab3
+# pwrite=1
+# prdata=xxxxxxxx
+# pslverr=x
+# ............................
+# Agent:agent_no:1
+# Generator:agent_no=1
+# ............................
+# time=0: Generator: Data packet for write
+# paddr=208
+# pwdata=ddfa1710
+# pwrite=1
+# prdata=xxxxxxxx
+# pslverr=x
+# ............................
+# Generator:agent_no=1
+# ............................
+# time=0: Generator: Data packet for read
+# paddr=208
+# pwdata=da074386
+# pwrite=0
+# prdata=xxxxxxxx
+# pslverr=x
+# ............................
+# Driver:agent_no=1
+# ............................
+# time=0: Driver: Data packet received from generator
+# paddr=208
+# pwdata=ddfa1710
+# pwrite=1
+# prdata=xxxxxxxx
+# pslverr=x
+# ............................
+# Agent:agent_no:0
+# Generator:agent_no=0
+# ............................
+# time=0: Generator: Data packet for write
+# paddr=3db
+# pwdata=609c6edc
+# pwrite=1
+# prdata=xxxxxxxx
+# pslverr=x
+# ............................
+# Generator:agent_no=0
+# ............................
+# time=0: Generator: Data packet for read
+# paddr=3db
+# pwdata=c370abe6
+# pwrite=0
+# prdata=xxxxxxxx
+# pslverr=x
+# ............................
+# Driver:agent_no=0
+# ............................
+# time=0: Driver: Data packet received from generator
+# paddr=3db
+# pwdata=609c6edc
+# pwrite=1
+# prdata=xxxxxxxx
+# pslverr=x
+# ............................
+# Driver:agent_no=2
+# ............................
+# time=55: Driver: Data packet received from DUT
+# paddr=059
+# pwdata=7d530ab3
+# pwrite=1
+# prdata=xxxxxxxx
+# pslverr=x
+# ............................
+# Driver:agent_no=2
+# ............................
+# time=65: Driver: Data packet received from generator
+# paddr=059
+# pwdata=99735cf2
+# pwrite=0
+# prdata=xxxxxxxx
+# pslverr=x
+# ............................
+# Monitor:agent_no=2
+# ............................
+# time=65: Monitor: Data packet
+# paddr=059
+# pwdata=7d530ab3
+# pwrite=1
+# prdata=xxxxxxxx
+# pslverr=0
+# ............................
+# ............................
+# time=65: Coverage: Data packet
+# paddr=059
+# pwdata=7d530ab3
+# pwrite=1
+# prdata=xxxxxxxx
+# pslverr=0
+# ............................
+# -----------------coverage report-----------------
+# cov_grp.cov_p1 paddr:coverage = 20.000000%
+# cov_grp.cov_p2 pwdata:coverage = 12.500000%
+# cov_grp.cov_p3 pwrite:coverage = 50.000000%
+# cov_grp.cov_p4 prdata:coverage = 0.000000%
+# TOTAL COVERAGE = 20.625000%
+# cov_count=1
+# ............................
+# time=65: Scoreboard: Data packet
+# paddr=059
+# pwdata=7d530ab3
+# pwrite=1
+# prdata=xxxxxxxx
+# pslverr=0
+# ............................
+# Scoreboard:slave error for write comparision passed
+# compare_count=1
+# Driver:agent_no=1
+# ............................
+# time=115: Driver: Data packet received from DUT
+# paddr=208
+# pwdata=ddfa1710
+# pwrite=1
+# prdata=xxxxxxxx
+# pslverr=x
+# ............................
+# Driver:agent_no=1
+# ............................
+# time=125: Driver: Data packet received from generator
+# paddr=208
+# pwdata=da074386
+# pwrite=0
+# prdata=xxxxxxxx
+# pslverr=x
+# ............................
+# Monitor:agent_no=1
+# ............................
+# time=125: Monitor: Data packet
+# paddr=208
+# pwdata=ddfa1710
+# pwrite=1
+# prdata=xxxxxxxx
+# pslverr=0
+# ............................
+# ............................
+# time=125: Coverage: Data packet
+# paddr=208
+# pwdata=ddfa1710
+# pwrite=1
+# prdata=xxxxxxxx
+# pslverr=0
+# ............................
+# -----------------coverage report-----------------
+# cov_grp.cov_p1 paddr:coverage = 40.000000%
+# cov_grp.cov_p2 pwdata:coverage = 12.500000%
+# cov_grp.cov_p3 pwrite:coverage = 50.000000%
+# cov_grp.cov_p4 prdata:coverage = 0.000000%
+# TOTAL COVERAGE = 25.625000%
+# cov_count=2
+# ............................
+# time=125: Scoreboard: Data packet
+# paddr=208
+# pwdata=ddfa1710
+# pwrite=1
+# prdata=xxxxxxxx
+# pslverr=0
+# ............................
+# Scoreboard:slave error for write comparision passed
+# compare_count=2
+# Driver:agent_no=0
+# ............................
+# time=175: Driver: Data packet received from DUT
+# paddr=3db
+# pwdata=609c6edc
+# pwrite=1
+# prdata=xxxxxxxx
+# pslverr=x
+# ............................
+# Driver:agent_no=0
+# ............................
+# time=185: Driver: Data packet received from generator
+# paddr=3db
+# pwdata=c370abe6
+# pwrite=0
+# prdata=xxxxxxxx
+# pslverr=x
+# ............................
+# Monitor:agent_no=0
+# ............................
+# time=185: Monitor: Data packet
+# paddr=3db
+# pwdata=609c6edc
+# pwrite=1
+# prdata=xxxxxxxx
+# pslverr=0
+# ............................
+# ............................
+# time=185: Coverage: Data packet
+# paddr=3db
+# pwdata=609c6edc
+# pwrite=1
+# prdata=xxxxxxxx
+# pslverr=0
+# ............................
+# -----------------coverage report-----------------
+# cov_grp.cov_p1 paddr:coverage = 60.000000%
+# cov_grp.cov_p2 pwdata:coverage = 12.500000%
+# cov_grp.cov_p3 pwrite:coverage = 50.000000%
+# cov_grp.cov_p4 prdata:coverage = 0.000000%
+# TOTAL COVERAGE = 30.625000%
+# cov_count=3
+# ............................
+# time=185: Scoreboard: Data packet
+# paddr=3db
+# pwdata=609c6edc
+# pwrite=1
+# prdata=xxxxxxxx
+# pslverr=0
+# ............................
+# Scoreboard:slave error for write comparision passed
+# compare_count=3
+# Driver:agent_no=2
+# ............................
+# time=235: Driver: Data packet received from DUT
+# paddr=059
+# pwdata=99735cf2
+# pwrite=0
+# prdata=7d530ab3
+# pslverr=0
+# ............................
+# Monitor:agent_no=2
+# ............................
+# time=245: Monitor: Data packet
+# paddr=059
+# pwdata=xxxxxxxx
+# pwrite=0
+# prdata=7d530ab3
+# pslverr=0
+# ............................
+# ............................
+# time=245: Coverage: Data packet
+# paddr=059
+# pwdata=xxxxxxxx
+# pwrite=0
+# prdata=7d530ab3
+# pslverr=0
+# ............................
+# -----------------coverage report-----------------
+# cov_grp.cov_p1 paddr:coverage = 60.000000%
+# cov_grp.cov_p2 pwdata:coverage = 12.500000%
+# cov_grp.cov_p3 pwrite:coverage = 100.000000%
+# cov_grp.cov_p4 prdata:coverage = 12.500000%
+# TOTAL COVERAGE = 46.250000%
+# cov_count=4
+# ............................
+# time=245: Scoreboard: Data packet
+# paddr=059
+# pwdata=xxxxxxxx
+# pwrite=0
+# prdata=7d530ab3
+# pslverr=0
+# ............................
+# Scoreboard:slave error for read comparision passed
+# Scoreboard:Data read comparision passed
+# compare_count=4
+# Driver:agent_no=1
+# ............................
+# time=295: Driver: Data packet received from DUT
+# paddr=208
+# pwdata=da074386
+# pwrite=0
+# prdata=ddfa1710
+# pslverr=0
+# ............................
+# Monitor:agent_no=1
+# ............................
+# time=305: Monitor: Data packet
+# paddr=208
+# pwdata=xxxxxxxx
+# pwrite=0
+# prdata=ddfa1710
+# pslverr=0
+# ............................
+# ............................
+# time=305: Coverage: Data packet
+# paddr=208
+# pwdata=xxxxxxxx
+# pwrite=0
+# prdata=ddfa1710
+# pslverr=0
+# ............................
+# -----------------coverage report-----------------
+# cov_grp.cov_p1 paddr:coverage = 60.000000%
+# cov_grp.cov_p2 pwdata:coverage = 12.500000%
+# cov_grp.cov_p3 pwrite:coverage = 100.000000%
+# cov_grp.cov_p4 prdata:coverage = 12.500000%
+# TOTAL COVERAGE = 46.250000%
+# cov_count=5
+# ............................
+# time=305: Scoreboard: Data packet
+# paddr=208
+# pwdata=xxxxxxxx
+# pwrite=0
+# prdata=ddfa1710
+# pslverr=0
+# ............................
+# Scoreboard:slave error for read comparision passed
+# Scoreboard:Data read comparision passed
+# compare_count=5
+# Driver:agent_no=0
+# ............................
+# time=355: Driver: Data packet received from DUT
+# paddr=3db
+# pwdata=c370abe6
+# pwrite=0
+# prdata=609c6edc
+# pslverr=0
+# ............................
+# Monitor:agent_no=0
+# ............................
+# time=365: Monitor: Data packet
+# paddr=3db
+# pwdata=xxxxxxxx
+# pwrite=0
+# prdata=609c6edc
+# pslverr=0
+# ............................
+# ............................
+# time=365: Coverage: Data packet
+# paddr=3db
+# pwdata=xxxxxxxx
+# pwrite=0
+# prdata=609c6edc
+# pslverr=0
+# ............................
+# -----------------coverage report-----------------
+# cov_grp.cov_p1 paddr:coverage = 60.000000%
+# cov_grp.cov_p2 pwdata:coverage = 12.500000%
+# cov_grp.cov_p3 pwrite:coverage = 100.000000%
+# cov_grp.cov_p4 prdata:coverage = 12.500000%
+# TOTAL COVERAGE = 46.250000%
+# cov_count=6
+# ............................
+# time=365: Scoreboard: Data packet
+# paddr=3db
+# pwdata=xxxxxxxx
+# pwrite=0
+# prdata=609c6edc
+# pslverr=0
+# ............................
+# Scoreboard:slave error for read comparision passed
+# Scoreboard:Data read comparision passed
+# compare_count=6
+# ** Note: $finish    : testbench.sv(59)
+#    Time: 415 ns  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at testbench.sv line 59
+# End time: 12:20:51 on Jun 25,2022, Elapsed time: 0:01:33
+# Errors: 0, Warnings: 4

@@ -1,0 +1,10 @@
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+Start time: 18:15:58 on Jun 07,2022
+vlog -reportprogress 300 testbench.v -l comp_run.log 
+-- Compiling module apb_master
+-- Compiling module top
+
+Top level modules:
+	top
+End time: 18:15:58 on Jun 07,2022, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

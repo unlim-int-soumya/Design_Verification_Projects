@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dd:/M.TECH_PROJECT/apb_final_verilog_code
+vapb_master
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 AOXmgo>Q4>RPm7nO0K;Vh3
+I1RJA2]J17mA>z`5zDdF?Z0
+R0
+w1654713383
+8apb_master.v
+Fapb_master.v
+L0 4
+Z2 OL;L;10.6c;65
+Z3 !s108 1654798079.000000
+Z4 !s107 apb_slave.v|apb_master.v|design.v|testbench.v|
+Z5 !s90 -reportprogress|300|testbench.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vapb_master_slave
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 UL2LIA03FkUd:UHo:clAG1
+I<9O^1ij93OebUD>9cPW_T0
+R0
+w1654713057
+8design.v
+Fdesign.v
+L0 7
+R2
+R3
+R4
+R5
+!i113 0
+R6
+R7
+vapb_slave
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 Jb^jEoJ@Y675MBKoJ1;Q02
+IcO[=J]@lB9]adnkWf6HIK0
+R0
+w1654713363
+8apb_slave.v
+Fapb_slave.v
+L0 8
+R2
+R3
+R4
+R5
+!i113 0
+R6
+R7
+vtop
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 _Rk=2I;<n;1_<]X8CO<3T2
+IHnZW_KhY2ZFkVY0mfVzUJ2
+R0
+w1654712729
+8testbench.v
+Ftestbench.v
+L0 12
+R2
+R3
+R4
+R5
+!i113 0
+R6
+R7
