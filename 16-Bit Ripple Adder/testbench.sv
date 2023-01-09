@@ -18,19 +18,8 @@ module testbench;
     run_test("test_1011");
   end
 
-  /*
-  adder u0 (
-   // .rstn(_if.rstn),
-    .a(_if.a),
-    .b(_if.b),
-    .cin(_if.cin),
-    .sum(_if.sum),
-    .cout(_if.cout)
-  ); */
   
-  
-  adder u0 (
-    .rstn(_if.rstn),
+  ripple_carry_16_bit u0 (
     .a(_if.a),
     .b(_if.b),
     .cin(_if.cin),
