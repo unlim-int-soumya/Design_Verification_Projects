@@ -1,0 +1,285 @@
+$date
+	Sun Feb 19 14:52:31 2023
+$end
+
+$version
+	Synopsys VCS version S-2021.09
+$end
+
+$timescale
+	1ns
+$end
+
+$comment Csum: 1 5db8df5971c5074a $end
+
+
+$scope module $unit $end
+$upscope $end
+
+
+$scope module tb_top $end
+$var reg 1 ! clk $end
+
+$scope begin unnamed$$_vcs_2 $end
+$upscope $end
+
+
+$scope begin unnamed$$_vcs_0 $end
+$upscope $end
+
+
+$scope begin unnamed$$_vcs_1 $end
+$upscope $end
+
+
+$scope module _if $end
+$var wire 1 " pclk $end
+$var reg 32 # paddr [31:0] $end
+$var reg 32 $ pwdata [31:0] $end
+$var reg 32 % prdata [31:0] $end
+$var reg 1 & pwrite $end
+$var reg 1 ' psel $end
+$var reg 1 ( penable $end
+$var reg 1 ) presetn $end
+$upscope $end
+
+
+$scope module u0 $end
+$var wire 1 " pclk $end
+$var wire 1 * presetn $end
+$var wire 32 + paddr [31:0] $end
+$var wire 1 , psel $end
+$var wire 32 - pwdata [31:0] $end
+$var wire 1 . pwrite $end
+$var wire 1 / penable $end
+$var wire 32 0 prdata [31:0] $end
+$var reg 4 1 ctl_reg [3:0] $end
+$var reg 2 2 stat_reg [1:0] $end
+$var reg 32 3 timer_0 [31:0] $end
+$var reg 32 4 timer_1 [31:0] $end
+$var reg 32 5 data_in [31:0] $end
+$var reg 32 6 rdata_tmp [31:0] $end
+$upscope $end
+
+$upscope $end
+
+
+$scope module uvm_pkg $end
+$var reg 32 7 UVM_UNBOUNDED_CONNECTIONS [31:0] $end
+$var reg 1 8 uvm_start_uvm_declarations $end
+$var time 64 9 setting_offset $end
+$var reg 32 : setting_verbosity [31:0] $end
+$var reg 1 ; is_verdi_set_verbosity_called $end
+$var reg 32 < uvm_global_random_seed [31:0] $end
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+0;
+18
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 9
+b11111111111111111111111111111111 7
+b00000000000000000000000000000000 :
+b01000010000001111100110001000111 <
+0!
+bzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz %
+b00000000000000000000000000000000 $
+b00000000000000000000000000000000 #
+bxxxx 1
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 5
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 6
+bxx 2
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 3
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 4
+b00000000000000000000000000000000 +
+b00000000000000000000000000000000 -
+bzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz 0
+0/
+0*
+0,
+0.
+0"
+0(
+0)
+0'
+0&
+$end
+#10
+1!
+1"
+1)
+1*
+b00000000000000000000000000000000 5
+b0000 1
+b00 2
+b11001010111111100001001000110100 3
+b11001010111111100101011001111000 4
+#20
+0!
+0"
+#30
+1!
+1"
+b00000000000000000000000000001000 #
+b00000000000000000000000000001000 +
+b11001010111111101111111011101101 $
+b11001010111111101111111011101101 -
+1&
+1.
+1'
+1,
+#40
+0!
+0"
+#50
+1!
+1"
+1(
+1/
+#60
+0!
+0"
+#70
+1!
+1"
+0'
+0,
+0(
+0/
+b11001010111111101111111011101101 4
+0&
+0.
+1'
+1,
+#80
+0!
+0"
+#90
+1!
+1"
+1(
+1/
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 0
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx %
+b11001010111111101111111011101101 6
+b11001010111111101111111011101101 0
+b11001010111111101111111011101101 %
+#100
+0!
+0"
+#110
+1!
+1"
+0'
+0,
+0(
+0/
+bzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz 0
+bzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz %
+1'
+1,
+#120
+0!
+0"
+#130
+1!
+1"
+1(
+1/
+b11001010111111101111111011101101 0
+b11001010111111101111111011101101 %
+#140
+0!
+0"
+#150
+1!
+1"
+0'
+0,
+0(
+0/
+bzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz 0
+bzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz %
+b00000000000000000000000000000000 #
+b00000000000000000000000000000000 +
+b00000000000000000000000000000010 $
+b00000000000000000000000000000010 -
+1&
+1.
+1'
+1,
+#160
+0!
+0"
+#170
+1!
+1"
+1(
+1/
+#180
+0!
+0"
+#190
+1!
+1"
+0'
+0,
+0(
+0/
+b0010 1
+b00000000000000000000000000001100 #
+b00000000000000000000000000001100 +
+b00010010001101000101011001111000 $
+b00010010001101000101011001111000 -
+1'
+1,
+#200
+0!
+0"
+#210
+1!
+1"
+1(
+1/
+#220
+0!
+0"
+#230
+1!
+1"
+0'
+0,
+0(
+0/
+#240
+0!
+0"
+#250
+1!
+1"
+#260
+0!
+0"
+#270
+1!
+1"
+#280
+0!
+0"
+#290
+1!
+1"
+#300
+0!
+0"
+#310
+1!
+1"
+#320
+0!
+0"
+#330
+1!
+1"

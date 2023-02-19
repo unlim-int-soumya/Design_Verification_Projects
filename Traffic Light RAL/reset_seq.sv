@@ -1,0 +1,32 @@
+class reset_seq extends uvm_sequence;
+	`uvm_object_utils(reset_seq)
+	function new(string name="reset_seq");
+		super.new(name);
+      
+	endfunction
+
+	virtual bus_if vif;
+
+	task body();
+      
+   
+      //Neccesary
+      if(!uvm_config_db #(virtual bus_if)::get(null,"uvm_test_top.m_env.m_agent.*", "bus_if", vif))
+ 			`uvm_fatal("VIF", "No vif")
+      
+      //Past
+//        if(!uvm_config_db #(virtual bus_if)::get(null,"uvm_test_top.m_env.m_agent.*", "bus_if", vif))
+//  			`uvm_fatal("VIF", "No vif")
+
+		
+      `uvm_info("RESET", "Running reset ...", UVM_MEDIUM);
+		
+      vif.presetn <= 0;
+		
+      @(posedge vif.pclk) 
+      vif.presetn <= 1;
+		
+      @(posedge vif.pclk);
+	endtask
+
+endclass
