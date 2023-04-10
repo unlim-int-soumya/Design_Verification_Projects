@@ -32,7 +32,15 @@ class sco extends uvm_scoreboard;
       //Data Obtained from DEC ENGINE
       `uvm_info("SB",$sformatf("INPUTS FROM DECODER: trref.insn =%0b", trref.insn),UVM_LOW);
 
-      `uvm_info("SB",$sformatf("OUTPUTS FROM DECODER: \ntrref.r1sel = %0b trref.r1re<= %0b trref.r2sel<= %0b trref.r2re <= %0b trref.wsel <= %0b \ntrref.regfile_we <= %0b trref.nzp_we <= %0b trref.select_pc_plus_one <= %0b trref.is_load <= %0b trref.is_store <= %0b \ntrref.is_branch <= %0b trref.is_control_insn <= %0b\n\n", trref.r1sel, trref.r1re,trref.r2sel, trref.r2re,trref.wsel,trref.regfile_we,trref.nzp_we, trref.select_pc_plus_one, trref.is_load, trref.is_store, trref.is_branch, trref.is_control_insn),UVM_LOW);
+      `uvm_info("SB",$sformatf("OUTPUTS FROM DECODER: \ntrref.r1sel = %0b trref.r1re<= %0b trref.r2sel<= %0b trref.r2re <= %0b trref.wsel <= %0b \ntrref.regfile_we <= %0b trref.nzp_we <= %0b trref.select_pc_plus_one <= %0b trref.is_load <= %0b trref.is_store <= %0b \ntrref.is_branch <= %0b trref.is_control_insn <= %0b\n", trref.r1sel, trref.r1re,trref.r2sel, trref.r2re,trref.wsel,trref.regfile_we,trref.nzp_we, trref.select_pc_plus_one, trref.is_load, trref.is_store, trref.is_branch, trref.is_control_insn),UVM_LOW);
+
+      
+      if(tr.compare(trref))  begin
+        `uvm_info("SCO", "Test Passed\n\n", UVM_NONE)
+      end
+      else  begin
+        `uvm_info("SCO", "Test Failed\n\n", UVM_NONE)
+      end
 
 
     end

@@ -53,223 +53,122 @@ class ref_model extends uvm_monitor;
       `uvm_error("ref_model","Unable to access Interface");
   endfunction
 
+ 
   function void predict();
     opcode = tr.insn[15:12];
 
-    is_shift = (opcode == 4'b1010) ? 1'b1: 1'b0;
-    is_logic = (opcode == 4'b0101) ? 1'b1 : 1'b0;
-    is_compare = (opcode == 4'b0010) ? 1'b1 : 1'b0;
+    is_branch = (opcode == 4'b0000 & tr.insn != 0);
+
+    is_arith = (opcode == 4'b0001);
+
+    is_add = (is_arith & (tr.insn[5:3] == 3'b000));
+
+    is_mul = (is_arith & (tr.insn[5:3] == 3'b001));
+
+    is_sub = (is_arith & (tr.insn[5:3] == 3'b010));
+
+    is_div = (is_arith & (tr.insn[5:3] == 3'b011));
+
+    is_addi = (is_arith & tr.insn[5]);
+
+    is_compare = (opcode == 4'b0010);
+
+    is_cmp = (is_compare & (tr.insn[8:7] == 2'b00));
+
+    is_cmpu = (is_compare & (tr.insn[8:7] == 2'b01));
+
+    is_cmpi = (is_compare & (tr.insn[8:7] == 2'b10));
+
+    is_cmpiu = (is_compare & (tr.insn[8:7] == 2'b11));
+
+    is_jsr = (tr.insn[15:11] == 5'b01001);
+
+    is_jsrr = (tr.insn[15:11] == 5'b01000);
+
+    is_logic = (opcode == 4'b0101);
+
+    is_and = (is_logic & (tr.insn[5:3] == 3'b000));
+
+    is_not = (is_logic & (tr.insn[5:3] == 3'b001));
+
+    is_or = (is_logic & (tr.insn[5:3] == 3'b010));
+
+    is_xor = (is_logic & (tr.insn[5:3] == 3'b011));
+
+    is_andi = (is_logic & tr.insn[5]);
+
+    is_ldr = (opcode == 4'b0110);
+
+    is_str = (opcode == 4'b0111);
+
+    is_rti = (opcode == 4'b1000);
+
+    is_const = (opcode == 4'b1001);
 
 
-    if(opcode == 4'b0000 && tr.insn!=0) begin
-      is_branch = 1'b1;   
-    end
-
-    //Arithematic
-
-
-    is_arith = (opcode == 4'b0000) ? 1'b1 : 1'b0;
-
-    if(opcode == 4'b0000) begin
-      case(tr.insn[5:3])
-        3'b000:
-          begin
-            is_add = 1;		
-          end
-        3'b001:
-          begin
-            is_mul = 1;		
-          end
-        3'b010:
-          begin
-            is_sub = 1;		
-          end
-        3'b011:
-          begin
-            is_div = 1;		
-          end
-      endcase
-      if(tr.insn[5]==1) 
-        is_addi =1;
-
-      //Comapare Insn
-
-    end else if(opcode == 4'b0010) begin
-      case(tr.insn[8:7])
-        2'b00:
-          begin
-            is_cmp = 1'b1;
-          end
-        2'b01:
-          begin
-            is_cmpu = 1'b1;
-          end
-        2'b10:
-          begin
-            is_cmpi = 1'b1;
-          end
-        2'b11:
-          begin
-            is_cmpiu = 1'b1;
-          end
-      endcase
-
-      //LOGICAL
-
-    end else if(opcode == 4'b0101) begin
-      case(tr.insn[5:3])
-        3'b000:
-          begin
-            is_and = 1'b1;
-          end
-        3'b001:
-          begin
-            is_not = 1'b1;
-          end
-        3'b010:
-          begin
-            is_or = 1'b1;
-          end
-        3'b011:
-          begin
-            is_xor = 1'b1;
-          end
-      endcase	
-      if(tr.insn[5])	is_andi = 1'b1;	
+    is_shift = (opcode == 4'b1010);
+    is_sll = (is_shift & (tr.insn[5:4] == 2'b00));
+    is_sra = (is_shift & (tr.insn[5:4] == 2'b01));
+    is_srl = (is_shift & (tr.insn[5:4] == 2'b10));
+    is_mod = (is_shift & (tr.insn[5:4] == 2'b11));
 
 
-      //Load Store and all
-
-    end else if (opcode ==4'b0110) begin
-      is_ldr <= 1'b1;
-
-    end else if(opcode == 4'b0111) begin
-      is_str <= 1'b1;
-
-    end else if(opcode == 4'b1000) begin
-      is_rti <= 1'b1;
-
-    end else if(opcode == 4'b1001) begin
-      is_const <= 1'b1;
-
-      //SHIFT
-
-    end else if(opcode == 4'b1010) begin
-      case(tr.insn[5:3])
-        2'b00:
-          begin
-            is_sll = 1'b1;
-          end
-        2'b01:
-          begin
-            is_sra = 1'b1;
-          end
-        2'b10:
-          begin
-            is_srl = 1'b1;
-          end
-        2'b11:
-          begin
-            is_mod = 1'b1;
-          end
-      endcase
+    is_jmpr = (tr.insn[15:11] == 5'b11000);
+    is_jmp = (tr.insn[15:11] == 5'b11001);
+    is_hiconst = (opcode == 4'b1101);
+    is_trap = (opcode == 4'b1111);
 
 
-    end else if(opcode == 4'b1101) begin
-      is_hiconst <= 1'b1;
-    end else if(opcode == 4'b1111) begin
-      is_trap <= 1'b1;
-    end 
+    r1sel = (is_compare | is_hiconst) ? tr.insn[11:9] :  
+    (is_rti) ? 3'd7 : tr.insn[8:6];
+    r1re = is_arith | 
+    is_compare | 
+    is_jsrr | 
+    is_logic | 
+    is_ldr | 
+    is_str | 
+    is_rti | 
+    is_shift | 
+    is_jmpr |
+    is_hiconst
+    ;
 
+    //r2sel = 0;
+    r2sel = (is_str) ? tr.insn[11:9] : tr.insn[2:0]; 
 
-    if(tr.insn[15:11]==5'b11000) begin
-      is_jmpr <= 1'b1;
-    end else if(insn[15:11] == 5'b11001) begin
-      is_jmp <= 1'b1;
-    end else if(insn[15:11]==5'b01001) begin
-      is_jsr <= 1'b1;
-    end else if(insn[15:11] == 5'b01000) begin
-      is_jsrr <= 1'b1;
-    end 
+    r2re = is_add | is_mul |  is_sub | is_div |
+    is_cmp | is_cmpu |
+    is_and | is_or | is_xor |
+    is_str |
+    is_mod;
 
-    //Regfister file
+    wsel = (is_jsr | is_jsrr | is_trap) ? 3'd7 : tr.insn[11:9];  
 
-    //r1sel
-    if(is_compare || is_const) begin
-      r1sel <= tr.insn[11:9];
-    end else if(is_rti) begin
-      r1sel <= 3'd7;
-    end else begin
-      r1sel <= tr.insn[8:6];
-    end
+    regfile_we = is_arith | is_jsr | is_jsrr | is_logic | is_ldr | is_const | is_shift | is_hiconst | is_trap;
 
-
-    //r1re
-    if(is_arith || is_compare || is_jsrr || is_logic || is_ldr || is_str || is_rti ||is_shift ||is_jmpr || is_hiconst)
-      r1re = 1'b1;
-
-    //r2sel
-    if(is_str) begin
-      r2sel <= tr.insn[11:9];
-    end else begin
-      r2sel <= tr.insn[2:0];
-    end
-
-    //r2re
-    if(is_add || is_mul || is_sub || is_div || is_cmp || is_cmpu || is_and || is_or || is_xor || is_str || is_mod)
-      r2re = 1'b1;
-
-    //wsel 
-    if(is_jsr || is_jsrr || is_trap) begin
-      wsel <= 3'd7;
-    end else begin
-      wsel <= tr.insn[11:9];
-    end
-
-    //regfile_we
-    if(is_arith || is_jsr || is_jsrr || is_logic || is_ldr || is_const || is_shift || is_hiconst || is_trap) 
-      regfile_we = 1'b1;
-
-    //nzp_we 
-    if(regfile_we || is_compare) 
-      nzp_we = 1'b1;
-
-    //select_pc_plus_one
-    if(is_trap || is_jsrr || is_jsr) 
-      select_pc_plus_one = 1'b1;
-
-    //is_load
+    nzp_we = regfile_we | is_compare;
+    select_pc_plus_one = is_trap | is_jsrr | is_jsr;
     is_load = is_ldr;
-
-
-    //is_store
     is_store = is_str;
+    is_control_insn =  is_jsr | is_jsrr | is_rti | is_jmpr | is_jmp | is_trap;
 
-    //is_control_insn
-    if(is_jsr || is_jsrr || is_rti || is_jmpr || is_jmp ||is_trap) begin
-      is_control_insn = 1'b1;
-    end
   endfunction
+
+
 
   virtual task run_phase(uvm_phase phase);
     forever begin
       //Refernce model also wait the same amount like monitor
-      #20;
-      /*
-      tr.a = mif.a;
-      tr.b = mif.b;
-      tr.c = mif.c;
-      tr.d = mif.d;
-      tr.sel = mif.sel;
-      */
-
-      predict();
+      #20;   
 
       //Inputs
       tr.insn = mif.insn;
 
-      //tr.insn = pkt2.insn;            // instruction
+      //Computation
+      predict();
 
+
+      //Outputs
       tr.r1sel = r1sel;              // rs
       tr.r1re = r1re;               // does this instruction read from rs?
       tr.r2sel = r2sel;              // rt
@@ -287,7 +186,6 @@ class ref_model extends uvm_monitor;
 
       `uvm_info("DEC",$sformatf("OUTPUTS: \ntr.insn = %0b tr.r1sel = %0b tr.r1re<= %0b tr.r2sel<= %0b tr.r2re <= %0b tr.wsel <= %0b \ntr.regfile_we <= %0b tr.nzp_we <= %0b tr.select_pc_plus_one <= %0b tr.is_load <= %0b tr.is_store <= %0b \ntr.is_branch <= %0b tr.is_control_insn <= %0b", tr.insn, tr.r1sel, tr.r1re,tr.r2sel, tr.r2re,tr.wsel,tr.regfile_we,tr.nzp_we, tr.select_pc_plus_one, tr.is_load, tr.is_store, tr.is_branch, tr.is_control_insn),UVM_NONE);
 
-      //`uvm_info("MON_REF", $sformatf("a:%0d b:%0d c:%0d d:%0d sel:%0d y:%0d", tr.a, tr.b,tr.c,tr.d,tr.sel,tr.y), UVM_NONE);
       send_ref.write(tr);
 
 
