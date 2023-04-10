@@ -1,0 +1,438 @@
+$date
+	Sun Apr  9 20:50:57 2023
+$end
+
+$version
+	Synopsys VCS version S-2021.09
+$end
+
+$timescale
+	1ps
+$end
+
+$comment Csum: 1 7478c4dad032e030 $end
+
+
+$scope module $unit $end
+$upscope $end
+
+
+$scope module tb $end
+
+$scope begin unnamed$$_vcs_1 $end
+$upscope $end
+
+
+$scope begin unnamed$$_vcs_0 $end
+$upscope $end
+
+
+$scope module mif $end
+$var reg 16 ! insn [15:0] $end
+$var reg 3 " r1sel [2:0] $end
+$var reg 1 # r1re $end
+$var reg 3 $ r2sel [2:0] $end
+$var reg 1 % r2re $end
+$var reg 3 & wsel [2:0] $end
+$var reg 1 ' regfile_we $end
+$var reg 1 ( nzp_we $end
+$var reg 1 ) select_pc_plus_one $end
+$var reg 1 * is_load $end
+$var reg 1 + is_store $end
+$var reg 1 , is_branch $end
+$var reg 1 - is_control_insn $end
+$upscope $end
+
+
+$scope module dut $end
+$var wire 16 . insn [15:0] $end
+$var wire 3 / r1sel [2:0] $end
+$var wire 1 0 r1re $end
+$var wire 3 1 r2sel [2:0] $end
+$var wire 1 2 r2re $end
+$var wire 3 3 wsel [2:0] $end
+$var wire 1 4 regfile_we $end
+$var wire 1 5 nzp_we $end
+$var wire 1 6 select_pc_plus_one $end
+$var wire 1 7 is_load $end
+$var wire 1 8 is_store $end
+$var wire 1 9 is_branch $end
+$var wire 1 : is_control_insn $end
+$var wire 4 ; opcode [3:0] $end
+$var wire 1 < is_arith $end
+$var wire 1 = is_add $end
+$var wire 1 > is_mul $end
+$var wire 1 ? is_sub $end
+$var wire 1 @ is_div $end
+$var wire 1 A is_addi $end
+$var wire 1 B is_compare $end
+$var wire 1 C is_cmp $end
+$var wire 1 D is_cmpu $end
+$var wire 1 E is_cmpi $end
+$var wire 1 F is_cmpiu $end
+$var wire 1 G is_jsr $end
+$var wire 1 H is_jsrr $end
+$var wire 1 I is_logic $end
+$var wire 1 J is_and $end
+$var wire 1 K is_not $end
+$var wire 1 L is_or $end
+$var wire 1 M is_xor $end
+$var wire 1 N is_andi $end
+$var wire 1 7 is_ldr $end
+$var wire 1 8 is_str $end
+$var wire 1 O is_rti $end
+$var wire 1 P is_const $end
+$var wire 1 Q is_shift $end
+$var wire 1 R is_sll $end
+$var wire 1 S is_sra $end
+$var wire 1 T is_srl $end
+$var wire 1 U is_mod $end
+$var wire 1 V is_jmpr $end
+$var wire 1 W is_jmp $end
+$var wire 1 X is_hiconst $end
+$var wire 1 Y is_trap $end
+$upscope $end
+
+$upscope $end
+
+
+$scope module uvm_pkg $end
+$var reg 32 Z UVM_UNBOUNDED_CONNECTIONS [31:0] $end
+$var reg 1 [ uvm_start_uvm_declarations $end
+$var time 64 \ setting_offset $end
+$var reg 32 ] setting_verbosity [31:0] $end
+$var reg 1 ^ is_verdi_set_verbosity_called $end
+$var reg 32 _ uvm_global_random_seed [31:0] $end
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+0^
+1[
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \
+b11111111111111111111111111111111 Z
+b00000000000000000000000000000000 ]
+b01000010000001111100110001000111 _
+b100 &
+b100 $
+b110 "
+b0101100110010100 !
+x<
+x=
+xW
+x>
+xO
+xA
+xP
+xB
+x?
+xX
+xE
+xY
+xF
+x@
+xI
+xC
+xD
+xK
+xG
+xN
+xH
+xQ
+xJ
+xR
+xL
+xT
+xM
+xS
+xU
+xV
+b0101 ;
+b0101100110010100 .
+b110 /
+b100 1
+b100 3
+0,
+0-
+0*
+0+
+1(
+1#
+1%
+1'
+0)
+09
+0:
+07
+08
+15
+10
+12
+14
+06
+$end
+0E
+0F
+0R
+0T
+0C
+0D
+0U
+0S
+0<
+0A
+0B
+1I
+0K
+0N
+0Q
+0=
+0>
+0?
+0@
+0G
+0H
+0J
+1L
+0M
+0V
+0W
+0O
+0P
+0X
+0Y
+#20000
+b0001110101011000 !
+b0001110101011000 .
+b0001 ;
+1<
+1@
+0I
+0L
+b000 1
+b000 $
+b101 /
+b101 "
+b110 3
+b110 &
+#40000
+b0001111111110010 !
+b0001111111110010 .
+1A
+0@
+b010 1
+b010 $
+02
+0%
+b111 /
+b111 "
+b111 3
+b111 &
+#60000
+b0100001000011110 !
+b0100001000011110 .
+b0100 ;
+0<
+0A
+1H
+b110 1
+b110 $
+b000 /
+b000 "
+1:
+1-
+16
+1)
+#80000
+b0010110011101011 !
+b0010110011101011 .
+b0010 ;
+1D
+1B
+0H
+b011 1
+b011 $
+b110 /
+b110 "
+12
+1%
+0:
+0-
+04
+0'
+06
+0)
+b110 3
+b110 &
+#100000
+b1110000100111011 !
+b1110000100111011 .
+b1110 ;
+0D
+0B
+05
+0(
+02
+0%
+b000 3
+b000 &
+b100 /
+b100 "
+00
+0#
+#120000
+b1101000000111000 !
+b1101000000111000 .
+b1101 ;
+1X
+b000 1
+b000 $
+b000 /
+b000 "
+14
+1'
+15
+1(
+10
+1#
+#140000
+b1001011010011111 !
+b1001011010011111 .
+b1001 ;
+1P
+0X
+b111 1
+b111 $
+b011 3
+b011 &
+b010 /
+b010 "
+00
+0#
+#160000
+b1011001101110111 !
+b1011001101110111 .
+b1011 ;
+0P
+b101 /
+b101 "
+b001 3
+b001 &
+04
+0'
+05
+0(
+#180000
+b1111111100010111 !
+b1111111100010111 .
+b1111 ;
+1Y
+b100 /
+b100 "
+b111 3
+b111 &
+1:
+1-
+14
+1'
+15
+1(
+16
+1)
+#200000
+b1011010100000011 !
+b1011010100000011 .
+b1011 ;
+0Y
+b011 1
+b011 $
+0:
+0-
+04
+0'
+05
+0(
+06
+0)
+b010 3
+b010 &
+#220000
+b1111101110111101 !
+b1111101110111101 .
+b1111 ;
+1Y
+b101 1
+b101 $
+b110 /
+b110 "
+b111 3
+b111 &
+1:
+1-
+14
+1'
+15
+1(
+16
+1)
+#240000
+b0010100101100001 !
+b0010100101100001 .
+b0010 ;
+1E
+1B
+0Y
+b001 1
+b001 $
+b100 /
+b100 "
+0:
+0-
+04
+0'
+10
+1#
+06
+0)
+b100 3
+b100 &
+#260000
+b0001001001001100 !
+b0001001001001100 .
+b0001 ;
+0E
+1<
+1>
+0B
+05
+0(
+12
+1%
+b100 1
+b100 $
+b001 3
+b001 &
+b001 /
+b001 "
+14
+1'
+15
+1(
+#280000
+b0110010000101000 !
+b0110010000101000 .
+b0110 ;
+0<
+0>
+17
+1*
+b000 1
+b000 $
+02
+0%
+b000 /
+b000 "
+b010 3
+b010 &
