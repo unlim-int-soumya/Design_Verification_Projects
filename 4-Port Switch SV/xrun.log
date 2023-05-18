@@ -1,0 +1,113 @@
+xrun: 20.09-s003: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun	20.09-s003: Started on May 18, 2023 at 13:42:20 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+      sing.randomize();
+                   |
+xmvlog: *W,FUNTSK (sequencer.sv,24|19): function called as a task without void'().
+(`include file: sequencer.sv line 24, file: testbench.sv line 8)
+      mult.randomize();
+                   |
+xmvlog: *W,FUNTSK (sequencer.sv,29|19): function called as a task without void'().
+(`include file: sequencer.sv line 29, file: testbench.sv line 8)
+      broad.randomize();
+                    |
+xmvlog: *W,FUNTSK (sequencer.sv,34|20): function called as a task without void'().
+(`include file: sequencer.sv line 34, file: testbench.sv line 8)
+	Top level design units:
+		$unit_0x67f934e9
+		switch_port
+		packet_test
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+Loading snapshot worklib.switch_port:sv .................... Done
+SVSEED default: 1
+xmsim: *W,RNDXCELON: A newer version of the SystemVerilog constraint solver is being used which has better support for array-solving, new solve-order mechanism, and seed stability enhancements..
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /xcelium20.09/tools/xcelium/files/xmsimrc
+xcelium> run
+MONITOR started for port 0
+MONITOR started for port 1
+MONITOR started for port 2
+MONITOR started for port 3
+sequencer created
+driver created
+sequencer created
+monitor created
+agent created
+packet_vc created
+sequencer created
+driver created
+sequencer created
+monitor created
+agent created
+packet_vc created
+sequencer created
+driver created
+sequencer created
+monitor created
+agent created
+packet_vc created
+sequencer created
+driver created
+sequencer created
+monitor created
+agent created
+packet_vc created
+@ pvc0.agt.drv
+name mult
+source 100, target 1010, data 111111
+ptype MULTICAST
+
+
+@ pvc1.agt.drv
+name mult
+source 100, target 1011, data 101001
+ptype MULTICAST
+
+
+@ pvc2.agt.drv
+name broad
+source 100, target 1111, data 1100100
+ptype BROADCAST
+
+
+@ pvc3.agt.drv
+name broad
+source 100, target 1111, data 101011
+ptype BROADCAST
+
+
+@ pvc3.agt.mon
+name pkt
+source 100, target 1111, data 101011
+ptype BROADCAST
+
+
+@ pvc2.agt.mon
+name pkt
+source 100, target 1111, data 1100100
+ptype BROADCAST
+
+
+@ pvc1.agt.mon
+name pkt
+source 100, target 1011, data 101001
+ptype MULTICAST
+
+
+@ pvc0.agt.mon
+name pkt
+source 100, target 1010, data 111111
+ptype MULTICAST
+
+
+Simulation complete via $finish(1) at time 600 NS + 0
+./testbench.sv:96     $finish;
+xcelium> exit
+TOOL:	xrun	20.09-s003: Exiting on May 18, 2023 at 13:42:21 EDT  (total: 00:00:01)
