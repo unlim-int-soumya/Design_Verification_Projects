@@ -1,0 +1,1027 @@
+# vsim -novopt top "+testname=axi_5_test" -l axi_5_test_2023-09-29_02-46-01.log 
+# Start time: 02:46:01 on Sep 29,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/questasim64_10.6c/AXI_UVC_VIP/Sim/work.top
+# Refreshing C:/questasim64_10.6c/AXI_UVC_VIP/Sim/work.axi_top_sv_unit
+# Refreshing C:/questasim64_10.6c/AXI_UVC_VIP/Sim/work.axi_pkg
+# Refreshing C:/questasim64_10.6c/AXI_UVC_VIP/Sim/work.axi_common
+# Loading sv_std.std
+# Loading work.axi_common
+# Loading mtiUvm.uvm_pkg
+# Loading work.axi_pkg
+# Loading work.axi_top_sv_unit
+# Loading work.top
+# Refreshing C:/questasim64_10.6c/AXI_UVC_VIP/Sim/work.axi_intf
+# Loading work.axi_intf
+# Refreshing C:/questasim64_10.6c/AXI_UVC_VIP/Sim/work.axi_slave
+# Loading work.axi_slave
+# Refreshing C:/questasim64_10.6c/AXI_UVC_VIP/Sim/work.axi_assertion
+# Loading work.axi_assertion
+# Loading mtiUvm.questa_uvm_pkg
+# ** Warning: (vsim-8637) ../Common/axi_mon.sv(37): A modport ('MONITOR') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-3764) ../Common/axi_mon.sv(26): Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(70): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(71): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(72): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(73): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(74): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(75): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(76): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(77): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(78): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(79): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(80): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(81): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(84): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(107): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(108): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(109): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(110): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(112): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(113): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(116): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(135): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(136): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(137): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(147): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(148): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(149): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(150): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(151): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(152): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(153): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(154): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(155): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(156): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(157): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(158): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(161): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(185): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(186): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(190): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-8637) ../Master_VIP/axi_bfm.sv(191): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# ** Warning: (vsim-3764) ../Master_VIP/axi_bfm.sv(28): Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /axi_pkg::axi_bfm File: ../Common/axi_pkg.sv
+# Loading C:/questasim64_10.6c/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test axi_5_test...
+# UVM_INFO ../Master_VIP/axi_scoreboard.sv(21) @ 0: uvm_test_top.axi.sbd [axi_scoreboard] Build Phase Executed
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               axi_5_test              -     @471 
+#   axi                      axi_env                 -     @478 
+#     agent                  axi_agent               -     @492 
+#       bfm                  axi_bfm                 -     @639 
+#         rsp_port           uvm_analysis_port       -     @654 
+#         seq_item_port      uvm_seq_item_pull_port  -     @646 
+#       mon                  axi_mon                 -     @662 
+#         custom_ap          uvm_analysis_port       -     @670 
+#       sqr                  axi_sqr                 -     @530 
+#         rsp_export         uvm_analysis_export     -     @537 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @631 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     cov                    axi_cov                 -     @514 
+#       analysis_imp         uvm_analysis_imp        -     @521 
+#     sbd                    axi_scoreboard          -     @499 
+#       analysis_imp         uvm_analysis_imp        -     @506 
+# --------------------------------------------------------------
+# 
+# UVM_INFO ..\Top\axi_test_lib.sv(32) @ 0: uvm_test_top [axi_5_test] start of simulation foruvm_test_top
+# UVM_INFO ../Master_VIP/axi_seq.sv(27) @ 0: uvm_test_top.axi.agent.sqr@@axi_5_seq [axi_5_seq] raise objection
+# UVM_INFO ../Master_VIP/axi_bfm.sv(67) @ 0: uvm_test_top.axi.agent.bfm [axi_bfm] WRITE_ADDR_PHASE
+# UVM_INFO ../Master_VIP/axi_bfm.sv(40) @ 0: uvm_test_top.axi.agent.bfm [axi_bfm] DRIVER : Packet Sent :
+# ---------------------------------------------------------------------------------------
+# Name                           Type          Size  Value                               
+# ---------------------------------------------------------------------------------------
+# req                            axi_tx        -     @691                                
+#   addr                         integral      32    'h105330bc                          
+#   len                          integral      4     'h5                                 
+#   id                           integral      4     'h3                                 
+#   prot                         integral      3     'h0                                 
+#   cache                        integral      4     'h0                                 
+#   wr_rd                        wr_rd_t       1     WRITE                               
+#   brust_size                   brust_size_t  3     BRUST_SIZE_4_BYTE                   
+#   brust_type                   brust_type_t  2     INCR                                
+#   lock                         lock_t        2     NORMAL                              
+#   resp                         resp_t        2     OKAY                                
+#   dataQ                        sa(integral)  6     -                                   
+#     [0]                        integral      32    'h530fb21d                          
+#     [1]                        integral      32    'hf48e7012                          
+#     [2]                        integral      32    'ha59816b9                          
+#     [3]                        integral      32    'h2ccba7e1                          
+#     [4]                        integral      32    'hd5a25835                          
+#     [5]                        integral      32    'h57d1c4dc                          
+#   packet_delay                 integral      32    'h45                                
+#   begin_time                   time          64    0                                   
+#   depth                        int           32    'd2                                 
+#   parent sequence (name)       string        9     axi_5_seq                           
+#   parent sequence (full name)  string        36    uvm_test_top.axi.agent.sqr.axi_5_seq
+#   sequencer                    string        26    uvm_test_top.axi.agent.sqr          
+# ---------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../Master_VIP/axi_bfm.sv(102) @ 25: uvm_test_top.axi.agent.bfm [axi_bfm] WRITE_DATA_PHASE
+# UVM_INFO ../Master_VIP/axi_bfm.sv(67) @ 69: uvm_test_top.axi.agent.bfm [axi_bfm] WRITE_ADDR_PHASE
+# UVM_INFO ../Master_VIP/axi_bfm.sv(40) @ 69: uvm_test_top.axi.agent.bfm [axi_bfm] DRIVER : Packet Sent :
+# ---------------------------------------------------------------------------------------
+# Name                           Type          Size  Value                               
+# ---------------------------------------------------------------------------------------
+# req                            axi_tx        -     @724                                
+#   addr                         integral      32    'h6d18b614                          
+#   len                          integral      4     'hf                                 
+#   id                           integral      4     'hd                                 
+#   prot                         integral      3     'h0                                 
+#   cache                        integral      4     'h0                                 
+#   wr_rd                        wr_rd_t       1     WRITE                               
+#   brust_size                   brust_size_t  3     BRUST_SIZE_4_BYTE                   
+#   brust_type                   brust_type_t  2     INCR                                
+#   lock                         lock_t        2     NORMAL                              
+#   resp                         resp_t        2     OKAY                                
+#   dataQ                        sa(integral)  16    -                                   
+#     [0]                        integral      32    'h662979a9                          
+#     [1]                        integral      32    'hdd3c00c6                          
+#     [2]                        integral      32    'h1679167e                          
+#     [3]                        integral      32    'hfe9bc963                          
+#     [4]                        integral      32    'h8f90dc86                          
+#     ...                        ...           ...   ...                                 
+#     [11]                       integral      32    'hca9a5d85                          
+#     [12]                       integral      32    'h5c4ff873                          
+#     [13]                       integral      32    'hdd7efdfe                          
+#     [14]                       integral      32    'h37dafab4                          
+#     [15]                       integral      32    'hfa5d87fe                          
+#   packet_delay                 integral      32    'h4d                                
+#   begin_time                   time          64    69                                  
+#   depth                        int           32    'd2                                 
+#   parent sequence (name)       string        9     axi_5_seq                           
+#   parent sequence (full name)  string        36    uvm_test_top.axi.agent.sqr.axi_5_seq
+#   sequencer                    string        26    uvm_test_top.axi.agent.sqr          
+# ---------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../Master_VIP/axi_bfm.sv(102) @ 95: uvm_test_top.axi.agent.bfm [axi_bfm] WRITE_DATA_PHASE
+# UVM_INFO ../Master_VIP/axi_bfm.sv(67) @ 146: uvm_test_top.axi.agent.bfm [axi_bfm] WRITE_ADDR_PHASE
+# UVM_INFO ../Master_VIP/axi_bfm.sv(40) @ 146: uvm_test_top.axi.agent.bfm [axi_bfm] DRIVER : Packet Sent :
+# ---------------------------------------------------------------------------------------
+# Name                           Type          Size  Value                               
+# ---------------------------------------------------------------------------------------
+# req                            axi_tx        -     @732                                
+#   addr                         integral      32    'hbfde7300                          
+#   len                          integral      4     'hc                                 
+#   id                           integral      4     'he                                 
+#   prot                         integral      3     'h0                                 
+#   cache                        integral      4     'h0                                 
+#   wr_rd                        wr_rd_t       1     WRITE                               
+#   brust_size                   brust_size_t  3     BRUST_SIZE_4_BYTE                   
+#   brust_type                   brust_type_t  2     INCR                                
+#   lock                         lock_t        2     NORMAL                              
+#   resp                         resp_t        2     OKAY                                
+#   dataQ                        sa(integral)  13    -                                   
+#     [0]                        integral      32    'h567188c7                          
+#     [1]                        integral      32    'hab89f5b0                          
+#     [2]                        integral      32    'ha9d289fd                          
+#     [3]                        integral      32    'h34eff303                          
+#     [4]                        integral      32    'hfe69acd1                          
+#     ...                        ...           ...   ...                                 
+#     [8]                        integral      32    'h796d3496                          
+#     [9]                        integral      32    'h9134ed63                          
+#     [10]                       integral      32    'hb8877bbb                          
+#     [11]                       integral      32    'hed7ab369                          
+#     [12]                       integral      32    'hed51c3ee                          
+#   packet_delay                 integral      32    'h8e                                
+#   begin_time                   time          64    146                                 
+#   depth                        int           32    'd2                                 
+#   parent sequence (name)       string        9     axi_5_seq                           
+#   parent sequence (full name)  string        36    uvm_test_top.axi.agent.sqr.axi_5_seq
+#   sequencer                    string        26    uvm_test_top.axi.agent.sqr          
+# ---------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../Master_VIP/axi_bfm.sv(132) @ 156: uvm_test_top.axi.agent.bfm [axi_bfm] WRITE_RESP_PHASE
+# ** Error: Assertion error.
+#    Time: 175 ns Started: 125 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 185 ns Started: 135 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 195 ns Started: 145 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 205 ns Started: 155 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 215 ns Started: 165 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 215 ns Started: 165 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 225 ns Started: 175 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 225 ns Started: 175 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 235 ns Started: 185 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 235 ns Started: 185 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 245 ns Started: 195 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 245 ns Started: 195 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 255 ns Started: 205 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 255 ns Started: 205 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 265 ns Started: 215 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 265 ns Started: 215 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 275 ns Started: 225 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 275 ns Started: 225 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 285 ns Started: 235 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 285 ns Started: 235 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# UVM_INFO ../Master_VIP/axi_bfm.sv(67) @ 288: uvm_test_top.axi.agent.bfm [axi_bfm] WRITE_ADDR_PHASE
+# UVM_INFO ../Master_VIP/axi_bfm.sv(40) @ 288: uvm_test_top.axi.agent.bfm [axi_bfm] DRIVER : Packet Sent :
+# ---------------------------------------------------------------------------------------
+# Name                           Type          Size  Value                               
+# ---------------------------------------------------------------------------------------
+# req                            axi_tx        -     @736                                
+#   addr                         integral      32    'h1cbbae68                          
+#   len                          integral      4     'h4                                 
+#   id                           integral      4     'hd                                 
+#   prot                         integral      3     'h0                                 
+#   cache                        integral      4     'h0                                 
+#   wr_rd                        wr_rd_t       1     WRITE                               
+#   brust_size                   brust_size_t  3     BRUST_SIZE_4_BYTE                   
+#   brust_type                   brust_type_t  2     INCR                                
+#   lock                         lock_t        2     NORMAL                              
+#   resp                         resp_t        2     OKAY                                
+#   dataQ                        sa(integral)  5     -                                   
+#     [0]                        integral      32    'h8affa5d2                          
+#     [1]                        integral      32    'hbc9e72c1                          
+#     [2]                        integral      32    'h14b7844e                          
+#     [3]                        integral      32    'hfb524659                          
+#     [4]                        integral      32    'h69093518                          
+#   packet_delay                 integral      32    'h4e                                
+#   begin_time                   time          64    288                                 
+#   depth                        int           32    'd2                                 
+#   parent sequence (name)       string        9     axi_5_seq                           
+#   parent sequence (full name)  string        36    uvm_test_top.axi.agent.sqr.axi_5_seq
+#   sequencer                    string        26    uvm_test_top.axi.agent.sqr          
+# ---------------------------------------------------------------------------------------
+# 
+# ** Error: Assertion error.
+#    Time: 295 ns Started: 245 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 295 ns Started: 245 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 305 ns Started: 255 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 305 ns Started: 255 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 315 ns Started: 265 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 315 ns Started: 265 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 325 ns Started: 275 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 325 ns Started: 275 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 335 ns Started: 285 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 335 ns Started: 285 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 345 ns Started: 295 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 345 ns Started: 295 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 355 ns Started: 305 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 355 ns Started: 305 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# UVM_INFO ../Master_VIP/axi_bfm.sv(132) @ 365: uvm_test_top.axi.agent.bfm [axi_bfm] WRITE_RESP_PHASE
+# ** Error: Assertion error.
+#    Time: 365 ns Started: 315 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 365 ns Started: 315 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# UVM_INFO ../Master_VIP/axi_bfm.sv(67) @ 366: uvm_test_top.axi.agent.bfm [axi_bfm] WRITE_ADDR_PHASE
+# UVM_INFO ../Master_VIP/axi_bfm.sv(40) @ 366: uvm_test_top.axi.agent.bfm [axi_bfm] DRIVER : Packet Sent :
+# ---------------------------------------------------------------------------------------
+# Name                           Type          Size  Value                               
+# ---------------------------------------------------------------------------------------
+# req                            axi_tx        -     @740                                
+#   addr                         integral      32    'h676e18dc                          
+#   len                          integral      4     'h3                                 
+#   id                           integral      4     'hc                                 
+#   prot                         integral      3     'h0                                 
+#   cache                        integral      4     'h0                                 
+#   wr_rd                        wr_rd_t       1     WRITE                               
+#   brust_size                   brust_size_t  3     BRUST_SIZE_4_BYTE                   
+#   brust_type                   brust_type_t  2     INCR                                
+#   lock                         lock_t        2     NORMAL                              
+#   resp                         resp_t        2     OKAY                                
+#   dataQ                        sa(integral)  4     -                                   
+#     [0]                        integral      32    'h551b03ab                          
+#     [1]                        integral      32    'h6aa062a1                          
+#     [2]                        integral      32    'hb64c8f06                          
+#     [3]                        integral      32    'h371c9de                           
+#   packet_delay                 integral      32    'h40                                
+#   begin_time                   time          64    366                                 
+#   depth                        int           32    'd2                                 
+#   parent sequence (name)       string        9     axi_5_seq                           
+#   parent sequence (full name)  string        36    uvm_test_top.axi.agent.sqr.axi_5_seq
+#   sequencer                    string        26    uvm_test_top.axi.agent.sqr          
+# ---------------------------------------------------------------------------------------
+# 
+# ** Error: Assertion error.
+#    Time: 375 ns Started: 325 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 375 ns Started: 325 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 385 ns Started: 335 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 385 ns Started: 335 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 395 ns Started: 345 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 395 ns Started: 345 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 405 ns Started: 355 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 405 ns Started: 355 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 415 ns Started: 365 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 415 ns Started: 365 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 425 ns Started: 375 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 425 ns Started: 375 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# UVM_INFO ../Master_VIP/axi_bfm.sv(145) @ 430: uvm_test_top.axi.agent.bfm [axi_bfm] READ_ADDR_PHASE
+# UVM_INFO ../Master_VIP/axi_bfm.sv(40) @ 430: uvm_test_top.axi.agent.bfm [axi_bfm] DRIVER : Packet Sent :
+# ---------------------------------------------------------------------------------------
+# Name                           Type          Size  Value                               
+# ---------------------------------------------------------------------------------------
+# req                            axi_tx        -     @744                                
+#   addr                         integral      32    'h105330bc                          
+#   len                          integral      4     'h5                                 
+#   id                           integral      4     'h6                                 
+#   prot                         integral      3     'h0                                 
+#   cache                        integral      4     'h0                                 
+#   wr_rd                        wr_rd_t       1     READ                                
+#   brust_size                   brust_size_t  3     BRUST_SIZE_4_BYTE                   
+#   brust_type                   brust_type_t  2     INCR                                
+#   lock                         lock_t        2     NORMAL                              
+#   resp                         resp_t        2     OKAY                                
+#   dataQ                        sa(integral)  6     -                                   
+#     [0]                        integral      32    'hdec0d37b                          
+#     [1]                        integral      32    'h1c73dda5                          
+#     [2]                        integral      32    'h12821ac3                          
+#     [3]                        integral      32    'h261a65cb                          
+#     [4]                        integral      32    'h2d8ad3b3                          
+#     [5]                        integral      32    'h96c55480                          
+#   packet_delay                 integral      32    'h8e                                
+#   begin_time                   time          64    430                                 
+#   depth                        int           32    'd2                                 
+#   parent sequence (name)       string        9     axi_5_seq                           
+#   parent sequence (full name)  string        36    uvm_test_top.axi.agent.sqr.axi_5_seq
+#   sequencer                    string        26    uvm_test_top.axi.agent.sqr          
+# ---------------------------------------------------------------------------------------
+# 
+# ** Error: Assertion error.
+#    Time: 435 ns Started: 385 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 435 ns Started: 385 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 445 ns Started: 395 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 445 ns Started: 395 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 455 ns Started: 405 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 455 ns Started: 405 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 465 ns Started: 415 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 465 ns Started: 415 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 475 ns Started: 425 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 475 ns Started: 425 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 485 ns Started: 435 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 485 ns Started: 435 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 495 ns Started: 445 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 495 ns Started: 445 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 495 ns Started: 445 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 505 ns Started: 455 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 505 ns Started: 455 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 505 ns Started: 455 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 515 ns Started: 465 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 515 ns Started: 465 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 515 ns Started: 465 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 525 ns Started: 475 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 525 ns Started: 475 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 525 ns Started: 475 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 535 ns Started: 485 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 535 ns Started: 485 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 535 ns Started: 485 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 545 ns Started: 495 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 545 ns Started: 495 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 545 ns Started: 495 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 555 ns Started: 505 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 555 ns Started: 505 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 555 ns Started: 505 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 565 ns Started: 515 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 565 ns Started: 515 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 565 ns Started: 515 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# UVM_INFO ../Master_VIP/axi_bfm.sv(145) @ 572: uvm_test_top.axi.agent.bfm [axi_bfm] READ_ADDR_PHASE
+# UVM_INFO ../Master_VIP/axi_bfm.sv(40) @ 572: uvm_test_top.axi.agent.bfm [axi_bfm] DRIVER : Packet Sent :
+# ---------------------------------------------------------------------------------------
+# Name                           Type          Size  Value                               
+# ---------------------------------------------------------------------------------------
+# req                            axi_tx        -     @748                                
+#   addr                         integral      32    'h6d18b614                          
+#   len                          integral      4     'hf                                 
+#   id                           integral      4     'h4                                 
+#   prot                         integral      3     'h0                                 
+#   cache                        integral      4     'h0                                 
+#   wr_rd                        wr_rd_t       1     READ                                
+#   brust_size                   brust_size_t  3     BRUST_SIZE_4_BYTE                   
+#   brust_type                   brust_type_t  2     INCR                                
+#   lock                         lock_t        2     NORMAL                              
+#   resp                         resp_t        2     OKAY                                
+#   dataQ                        sa(integral)  16    -                                   
+#     [0]                        integral      32    'hb71ddff0                          
+#     [1]                        integral      32    'h61fe4ff6                          
+#     [2]                        integral      32    'h35626144                          
+#     [3]                        integral      32    'h5d60dc22                          
+#     [4]                        integral      32    'hee6c08de                          
+#     ...                        ...           ...   ...                                 
+#     [11]                       integral      32    'h40ba45a9                          
+#     [12]                       integral      32    'h977a20c9                          
+#     [13]                       integral      32    'h52f089a3                          
+#     [14]                       integral      32    'hd09b77a9                          
+#     [15]                       integral      32    'h885d5e95                          
+#   packet_delay                 integral      32    'h8d                                
+#   begin_time                   time          64    572                                 
+#   depth                        int           32    'd2                                 
+#   parent sequence (name)       string        9     axi_5_seq                           
+#   parent sequence (full name)  string        36    uvm_test_top.axi.agent.sqr.axi_5_seq
+#   sequencer                    string        26    uvm_test_top.axi.agent.sqr          
+# ---------------------------------------------------------------------------------------
+# 
+# ** Error: Assertion error.
+#    Time: 575 ns Started: 525 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 575 ns Started: 525 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 575 ns Started: 525 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 585 ns Started: 535 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 585 ns Started: 535 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 585 ns Started: 535 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 595 ns Started: 545 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 595 ns Started: 545 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 595 ns Started: 545 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 605 ns Started: 555 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 605 ns Started: 555 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 605 ns Started: 555 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 615 ns Started: 565 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 615 ns Started: 565 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 615 ns Started: 565 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 625 ns Started: 575 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 625 ns Started: 575 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 625 ns Started: 575 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 635 ns Started: 585 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 635 ns Started: 585 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 635 ns Started: 585 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 645 ns Started: 595 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 645 ns Started: 595 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 645 ns Started: 595 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 655 ns Started: 605 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 655 ns Started: 605 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 655 ns Started: 605 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 665 ns Started: 615 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 665 ns Started: 615 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 665 ns Started: 615 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 675 ns Started: 625 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 675 ns Started: 625 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 675 ns Started: 625 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 685 ns Started: 635 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 685 ns Started: 635 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 685 ns Started: 635 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 695 ns Started: 645 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 695 ns Started: 645 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 695 ns Started: 645 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 705 ns Started: 655 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 705 ns Started: 655 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 705 ns Started: 655 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# UVM_INFO ../Master_VIP/axi_bfm.sv(145) @ 713: uvm_test_top.axi.agent.bfm [axi_bfm] READ_ADDR_PHASE
+# UVM_INFO ../Master_VIP/axi_bfm.sv(40) @ 713: uvm_test_top.axi.agent.bfm [axi_bfm] DRIVER : Packet Sent :
+# ---------------------------------------------------------------------------------------
+# Name                           Type          Size  Value                               
+# ---------------------------------------------------------------------------------------
+# req                            axi_tx        -     @752                                
+#   addr                         integral      32    'hbfde7300                          
+#   len                          integral      4     'hc                                 
+#   id                           integral      4     'h2                                 
+#   prot                         integral      3     'h0                                 
+#   cache                        integral      4     'h0                                 
+#   wr_rd                        wr_rd_t       1     READ                                
+#   brust_size                   brust_size_t  3     BRUST_SIZE_4_BYTE                   
+#   brust_type                   brust_type_t  2     INCR                                
+#   lock                         lock_t        2     NORMAL                              
+#   resp                         resp_t        2     OKAY                                
+#   dataQ                        sa(integral)  13    -                                   
+#     [0]                        integral      32    'h61c92a8e                          
+#     [1]                        integral      32    'hd8e9c16d                          
+#     [2]                        integral      32    'hb59d714a                          
+#     [3]                        integral      32    'h8a20600a                          
+#     [4]                        integral      32    'h9e00658f                          
+#     ...                        ...           ...   ...                                 
+#     [8]                        integral      32    'h488c0dbf                          
+#     [9]                        integral      32    'h282ba493                          
+#     [10]                       integral      32    'hd433db3d                          
+#     [11]                       integral      32    'hd5e205ca                          
+#     [12]                       integral      32    'hf8d2effc                          
+#   packet_delay                 integral      32    'h34                                
+#   begin_time                   time          64    713                                 
+#   depth                        int           32    'd2                                 
+#   parent sequence (name)       string        9     axi_5_seq                           
+#   parent sequence (full name)  string        36    uvm_test_top.axi.agent.sqr.axi_5_seq
+#   sequencer                    string        26    uvm_test_top.axi.agent.sqr          
+# ---------------------------------------------------------------------------------------
+# 
+# ** Error: Assertion error.
+#    Time: 715 ns Started: 665 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 715 ns Started: 665 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 715 ns Started: 665 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 725 ns Started: 675 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 725 ns Started: 675 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 725 ns Started: 675 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 735 ns Started: 685 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 735 ns Started: 685 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 735 ns Started: 685 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 745 ns Started: 695 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 745 ns Started: 695 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 745 ns Started: 695 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 755 ns Started: 705 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 755 ns Started: 705 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 755 ns Started: 705 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# UVM_INFO ../Master_VIP/axi_bfm.sv(145) @ 765: uvm_test_top.axi.agent.bfm [axi_bfm] READ_ADDR_PHASE
+# UVM_INFO ../Master_VIP/axi_bfm.sv(40) @ 765: uvm_test_top.axi.agent.bfm [axi_bfm] DRIVER : Packet Sent :
+# ---------------------------------------------------------------------------------------
+# Name                           Type          Size  Value                               
+# ---------------------------------------------------------------------------------------
+# req                            axi_tx        -     @756                                
+#   addr                         integral      32    'h1cbbae68                          
+#   len                          integral      4     'h4                                 
+#   id                           integral      4     'he                                 
+#   prot                         integral      3     'h0                                 
+#   cache                        integral      4     'h0                                 
+#   wr_rd                        wr_rd_t       1     READ                                
+#   brust_size                   brust_size_t  3     BRUST_SIZE_4_BYTE                   
+#   brust_type                   brust_type_t  2     INCR                                
+#   lock                         lock_t        2     NORMAL                              
+#   resp                         resp_t        2     OKAY                                
+#   dataQ                        sa(integral)  5     -                                   
+#     [0]                        integral      32    'h83defc22                          
+#     [1]                        integral      32    'hae75a0b1                          
+#     [2]                        integral      32    'h37512daf                          
+#     [3]                        integral      32    'h1ff417a4                          
+#     [4]                        integral      32    'hc6f7f0a5                          
+#   packet_delay                 integral      32    'h7b                                
+#   begin_time                   time          64    765                                 
+#   depth                        int           32    'd2                                 
+#   parent sequence (name)       string        9     axi_5_seq                           
+#   parent sequence (full name)  string        36    uvm_test_top.axi.agent.sqr.axi_5_seq
+#   sequencer                    string        26    uvm_test_top.axi.agent.sqr          
+# ---------------------------------------------------------------------------------------
+# 
+# ** Error: Assertion error.
+#    Time: 765 ns Started: 715 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 765 ns Started: 715 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 765 ns Started: 715 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 775 ns Started: 725 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 775 ns Started: 725 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 775 ns Started: 725 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 785 ns Started: 735 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 785 ns Started: 735 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 785 ns Started: 735 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 795 ns Started: 745 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 795 ns Started: 745 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 795 ns Started: 745 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 805 ns Started: 755 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 805 ns Started: 755 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 805 ns Started: 755 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 815 ns Started: 765 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 815 ns Started: 765 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 815 ns Started: 765 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 825 ns Started: 775 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 825 ns Started: 775 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 825 ns Started: 775 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 835 ns Started: 785 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 835 ns Started: 785 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 835 ns Started: 785 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 845 ns Started: 795 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 845 ns Started: 795 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 845 ns Started: 795 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 855 ns Started: 805 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 855 ns Started: 805 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 855 ns Started: 805 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 865 ns Started: 815 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 865 ns Started: 815 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 865 ns Started: 815 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 875 ns Started: 825 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 875 ns Started: 825 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 875 ns Started: 825 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 885 ns Started: 835 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 885 ns Started: 835 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 885 ns Started: 835 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# UVM_INFO ../Master_VIP/axi_bfm.sv(145) @ 888: uvm_test_top.axi.agent.bfm [axi_bfm] READ_ADDR_PHASE
+# UVM_INFO ../Master_VIP/axi_bfm.sv(40) @ 888: uvm_test_top.axi.agent.bfm [axi_bfm] DRIVER : Packet Sent :
+# ---------------------------------------------------------------------------------------
+# Name                           Type          Size  Value                               
+# ---------------------------------------------------------------------------------------
+# req                            axi_tx        -     @760                                
+#   addr                         integral      32    'h676e18dc                          
+#   len                          integral      4     'h3                                 
+#   id                           integral      4     'he                                 
+#   prot                         integral      3     'h0                                 
+#   cache                        integral      4     'h0                                 
+#   wr_rd                        wr_rd_t       1     READ                                
+#   brust_size                   brust_size_t  3     BRUST_SIZE_4_BYTE                   
+#   brust_type                   brust_type_t  2     INCR                                
+#   lock                         lock_t        2     NORMAL                              
+#   resp                         resp_t        2     OKAY                                
+#   dataQ                        sa(integral)  4     -                                   
+#     [0]                        integral      32    'h4cbe2203                          
+#     [1]                        integral      32    'h9c1bf6ad                          
+#     [2]                        integral      32    'h4516466b                          
+#     [3]                        integral      32    'h302c7f9d                          
+#   packet_delay                 integral      32    'h39                                
+#   begin_time                   time          64    888                                 
+#   depth                        int           32    'd2                                 
+#   parent sequence (name)       string        9     axi_5_seq                           
+#   parent sequence (full name)  string        36    uvm_test_top.axi.agent.sqr.axi_5_seq
+#   sequencer                    string        26    uvm_test_top.axi.agent.sqr          
+# ---------------------------------------------------------------------------------------
+# 
+# ** Error: Assertion error.
+#    Time: 895 ns Started: 845 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 895 ns Started: 845 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 895 ns Started: 845 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 905 ns Started: 855 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 905 ns Started: 855 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 905 ns Started: 855 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 915 ns Started: 865 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 915 ns Started: 865 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 915 ns Started: 865 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 925 ns Started: 875 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 925 ns Started: 875 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 925 ns Started: 875 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 935 ns Started: 885 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 935 ns Started: 885 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 935 ns Started: 885 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# UVM_INFO ../Master_VIP/axi_seq.sv(41) @ 945: uvm_test_top.axi.agent.sqr@@axi_5_seq [axi_5_seq] drop objection
+# ** Error: Assertion error.
+#    Time: 945 ns Started: 895 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 945 ns Started: 895 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 945 ns Started: 895 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 955 ns Started: 905 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 955 ns Started: 905 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 955 ns Started: 905 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 965 ns Started: 915 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 965 ns Started: 915 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 965 ns Started: 915 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 975 ns Started: 925 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 975 ns Started: 925 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 975 ns Started: 925 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 985 ns Started: 935 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 985 ns Started: 935 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 985 ns Started: 935 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 995 ns Started: 945 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 995 ns Started: 945 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 995 ns Started: 945 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 1005 ns Started: 955 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 1005 ns Started: 955 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 1005 ns Started: 955 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 1015 ns Started: 965 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 1015 ns Started: 965 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 1015 ns Started: 965 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 1025 ns Started: 975 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 1025 ns Started: 975 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 1025 ns Started: 975 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 1035 ns Started: 985 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 1035 ns Started: 985 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 1035 ns Started: 985 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 1045 ns Started: 995 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 1045 ns Started: 995 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 1045 ns Started: 995 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 1055 ns Started: 1005 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 1055 ns Started: 1005 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 1055 ns Started: 1005 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 1065 ns Started: 1015 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 1065 ns Started: 1015 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 1065 ns Started: 1015 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 1075 ns Started: 1025 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 1075 ns Started: 1025 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 1075 ns Started: 1025 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 1085 ns Started: 1035 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 1085 ns Started: 1035 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 1085 ns Started: 1035 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 1095 ns Started: 1045 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 1095 ns Started: 1045 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 1095 ns Started: 1045 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 1105 ns Started: 1055 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 1105 ns Started: 1055 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 1105 ns Started: 1055 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 1115 ns Started: 1065 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 1115 ns Started: 1065 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 1115 ns Started: 1065 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 1125 ns Started: 1075 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 1125 ns Started: 1075 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 1125 ns Started: 1075 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 1135 ns Started: 1085 ns  Scope: top.axi_assertion_i.RA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 61
+# ** Error: Assertion error.
+#    Time: 1135 ns Started: 1085 ns  Scope: top.axi_assertion_i.WR_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 1135 ns Started: 1085 ns  Scope: top.axi_assertion_i.WA_CHANNEL_HANDSHAKE_PROP File: ../Common/axi_assertion.sv Line: 58
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 1145: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO @ 1145: uvm_test_top [CFGNRD]  ::: The following resources have at least one write and no reads :::
+# recording_details [/^uvm_test_top\..*$/] : (reg signed[4095:0]) 1
+# -  
+#   --------
+#   uvm_test_top reads: 0 @ 0  writes: 1 @ 0
+#  
+# TEST: Check phase Executed
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   34
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [CFGNRD]     1
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [axi_5_seq]     2
+# [axi_5_test]     1
+# [axi_bfm]    24
+# [axi_scoreboard]     1
+# ** Note: $finish    : C:/questasim64_10.6c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 1145 ns  Iteration: 53  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.6c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430

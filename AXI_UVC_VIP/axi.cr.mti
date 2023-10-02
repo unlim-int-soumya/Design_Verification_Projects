@@ -1,0 +1,145 @@
+C:/questasim64_10.6c/axi_eda_working/axi_test_lib.sv {0 {vlog -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_test_lib.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+Start time: 19:58:40 on Sep 27,2023
+vlog -reportprogress 300 -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_test_lib.sv 
+** Error: (vlog-13069) C:/questasim64_10.6c/axi_eda_working/axi_test_lib.sv(5): near "uvm_test": syntax error, unexpected IDENTIFIER.
+** Error: C:/questasim64_10.6c/axi_eda_working/axi_test_lib.sv(5): Error in class extension specification.
+End time: 19:58:40 on Sep 27,2023, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+
+} {5.0 7.0} {}} C:/questasim64_10.6c/axi_eda_working/axi_seq.sv {0 {vlog -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_seq.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+Start time: 19:58:40 on Sep 27,2023
+vlog -reportprogress 300 -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_seq.sv 
+** Error: (vlog-13069) C:/questasim64_10.6c/axi_eda_working/axi_seq.sv(5): near "uvm_sequence": syntax error, unexpected IDENTIFIER.
+** Error: C:/questasim64_10.6c/axi_eda_working/axi_seq.sv(5): Error in class extension specification.
+End time: 19:58:40 on Sep 27,2023, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+
+} {5.0 7.0} {}} C:/questasim64_10.6c/axi_eda_working/axi_interface.sv {1 {vlog -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_interface.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+Start time: 19:58:38 on Sep 27,2023
+vlog -reportprogress 300 -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_interface.sv 
+-- Compiling interface axi_intf
+
+Top level modules:
+	--none--
+End time: 19:58:38 on Sep 27,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} C:/questasim64_10.6c/axi_eda_working/axi_bfm.sv {0 {vlog -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_bfm.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+Start time: 19:58:39 on Sep 27,2023
+vlog -reportprogress 300 -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_bfm.sv 
+** Error: (vlog-13069) C:/questasim64_10.6c/axi_eda_working/axi_bfm.sv(8): near "uvm_driver": syntax error, unexpected IDENTIFIER.
+** Error: C:/questasim64_10.6c/axi_eda_working/axi_bfm.sv(8): Error in class extension specification.
+End time: 19:58:40 on Sep 27,2023, Elapsed time: 0:00:01
+Errors: 2, Warnings: 0
+
+} {5.0 7.0} {}} C:/questasim64_10.6c/axi_eda_working/axi_ref.sv {0 {vlog -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_ref.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+Start time: 19:58:40 on Sep 27,2023
+vlog -reportprogress 300 -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_ref.sv 
+** Note: (vlog-2286) C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(4): Using implicit +incdir+C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+** Error: C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(21): Invalid type 'axi_tx'. Please check the type of the variable 'tx'.
+** Error: C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(35): (vlog-2730) Undefined variable: 'WRITE'.
+** Error: C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(40): (vlog-2163) Macro `WDATA_SIZE is undefined.
+** Error: (vlog-13069) C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(40): near "==": syntax error, unexpected ==.
+** Error: C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(41): (vlog-2163) Macro `WDATA_SIZE is undefined.
+** Error: (vlog-13069) C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(41): near "==": syntax error, unexpected ==.
+** Error: C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(42): (vlog-2163) Macro `WDATA_SIZE is undefined.
+** Error: (vlog-13069) C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(42): near "==": syntax error, unexpected ==.
+** Error: C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(43): (vlog-2163) Macro `WDATA_SIZE is undefined.
+** Error: (vlog-13069) C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(43): near "==": syntax error, unexpected ==.
+** Error: C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(47): (vlog-2163) Macro `WDATA_SIZE is undefined.
+** Error: (vlog-13069) C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(47): near "==": syntax error, unexpected ==.
+** Error: C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(51): (vlog-2163) Macro `WDATA_SIZE is undefined.
+** Error: (vlog-13069) C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(51): near "==": syntax error, unexpected ==.
+** Error: C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(58): (vlog-2163) Macro `WDATA_SIZE is undefined.
+** Error: (vlog-13069) C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(58): near "==": syntax error, unexpected ==.
+** Error: C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(60): (vlog-2730) Undefined variable: 'i'.
+** Error: (vlog-13069) C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(68): near "end": syntax error, unexpected end.
+** Error: C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(74): (vlog-2730) Undefined variable: 'i'.
+** Error: (vlog-13069) C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(74): near ")": syntax error, unexpected ')', expecting ';'.
+** Error: C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(78): (vlog-2163) Macro `WDATA_SIZE is undefined.
+** Error: (vlog-13069) C:/questasim64_10.6c/axi_eda_working/axi_ref.sv(90): near "end": syntax error, unexpected end.
+End time: 19:58:40 on Sep 27,2023, Elapsed time: 0:00:00
+Errors: 22, Warnings: 0
+
+} {6.0 28.0} {}} C:/questasim64_10.6c/axi_eda_working/axi_sqr.sv {0 {vlog -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_sqr.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+Start time: 19:58:40 on Sep 27,2023
+vlog -reportprogress 300 -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_sqr.sv 
+** Error: (vlog-13069) C:/questasim64_10.6c/axi_eda_working/axi_sqr.sv(5): near "uvm_sequencer": syntax error, unexpected IDENTIFIER.
+** Error: C:/questasim64_10.6c/axi_eda_working/axi_sqr.sv(5): Error in class extension specification.
+End time: 19:58:40 on Sep 27,2023, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+
+} {5.0 7.0} {}} C:/questasim64_10.6c/axi_eda_working/axi_agent.sv {0 {vlog -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_agent.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+Start time: 19:58:39 on Sep 27,2023
+vlog -reportprogress 300 -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_agent.sv 
+** Error: (vlog-13069) C:/questasim64_10.6c/axi_eda_working/axi_agent.sv(5): near "uvm_agent": syntax error, unexpected IDENTIFIER.
+** Error: C:/questasim64_10.6c/axi_eda_working/axi_agent.sv(5): Error in class extension specification.
+End time: 19:58:39 on Sep 27,2023, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+
+} {5.0 7.0} {}} C:/questasim64_10.6c/axi_eda_working/axi_assertion.sv {1 {vlog -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_assertion.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+Start time: 19:58:37 on Sep 27,2023
+vlog -reportprogress 300 -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_assertion.sv 
+-- Compiling module axi_assertion
+
+Top level modules:
+	axi_assertion
+End time: 19:58:38 on Sep 27,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+
+} {} {}} C:/questasim64_10.6c/axi_eda_working/axi_cov.sv {0 {vlog -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_cov.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+Start time: 19:58:40 on Sep 27,2023
+vlog -reportprogress 300 -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_cov.sv 
+** Error: (vlog-13069) C:/questasim64_10.6c/axi_eda_working/axi_cov.sv(5): near "uvm_subscriber": syntax error, unexpected IDENTIFIER.
+** Error: C:/questasim64_10.6c/axi_eda_working/axi_cov.sv(5): Error in class extension specification.
+End time: 19:58:40 on Sep 27,2023, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+
+} {5.0 7.0} {}} C:/questasim64_10.6c/axi_eda_working/axi_common.sv {1 {vlog -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_common.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+Start time: 19:58:38 on Sep 27,2023
+vlog -reportprogress 300 -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_common.sv 
+-- Compiling package axi_common
+
+Top level modules:
+	--none--
+End time: 19:58:38 on Sep 27,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} C:/questasim64_10.6c/axi_eda_working/axi_env.sv {0 {vlog -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_env.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+Start time: 19:58:40 on Sep 27,2023
+vlog -reportprogress 300 -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_env.sv 
+** Error: (vlog-13069) C:/questasim64_10.6c/axi_eda_working/axi_env.sv(4): near "uvm_env": syntax error, unexpected IDENTIFIER.
+** Error: C:/questasim64_10.6c/axi_eda_working/axi_env.sv(4): Error in class extension specification.
+End time: 19:58:40 on Sep 27,2023, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+
+} {5.0 7.0} {}} C:/questasim64_10.6c/axi_eda_working/axi_mon.sv {0 {vlog -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_mon.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+Start time: 19:58:40 on Sep 27,2023
+vlog -reportprogress 300 -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_mon.sv 
+** Error: (vlog-13069) C:/questasim64_10.6c/axi_eda_working/axi_mon.sv(7): near "uvm_monitor": syntax error, unexpected IDENTIFIER.
+** Error: C:/questasim64_10.6c/axi_eda_working/axi_mon.sv(7): Error in class extension specification.
+End time: 19:58:40 on Sep 27,2023, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+
+} {5.0 7.0} {}} C:/questasim64_10.6c/axi_eda_working/axi_tx.sv {0 {vlog -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_tx.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+Start time: 19:58:40 on Sep 27,2023
+vlog -reportprogress 300 -work work -vopt -sv C:/questasim64_10.6c/axi_eda_working/axi_tx.sv 
+** Error: (vlog-13069) C:/questasim64_10.6c/axi_eda_working/axi_tx.sv(5): near "uvm_sequence_item": syntax error, unexpected IDENTIFIER.
+** Error: C:/questasim64_10.6c/axi_eda_working/axi_tx.sv(5): Error in class extension specification.
+End time: 19:58:40 on Sep 27,2023, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+
+} {5.0 7.0} {}}
