@@ -1,0 +1,496 @@
+
+*** Running vivado
+    with args -log lc4_processor.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lc4_processor.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source lc4_processor.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/utils_1/imports/synth_1/lc4_processor.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/utils_1/imports/synth_1/lc4_processor.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top lc4_processor -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17580
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1675.906 ; gain = 397.977
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lc4_processor' [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_superscalar.v:31]
+INFO: [Synth 8-6157] synthesizing module 'Nbit_reg' [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/register.v:14]
+	Parameter n bound to: 16 - type: integer 
+	Parameter r bound to: 16'b1000001000000000 
+INFO: [Synth 8-6155] done synthesizing module 'Nbit_reg' (0#1) [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/register.v:14]
+INFO: [Synth 8-6157] synthesizing module 'lc4_decoder' [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_decoder.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'lc4_decoder' (0#1) [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_decoder.v:4]
+INFO: [Synth 8-6157] synthesizing module 'cla16' [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_cla.v:68]
+INFO: [Synth 8-6157] synthesizing module 'gp1' [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_cla.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'gp1' (0#1) [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_cla.v:35]
+INFO: [Synth 8-6157] synthesizing module 'partial_adder' [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_cla.v:19]
+INFO: [Synth 8-6157] synthesizing module 'halfadder' [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_cla.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'halfadder' (0#1) [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_cla.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'partial_adder' (0#1) [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_cla.v:19]
+INFO: [Synth 8-6157] synthesizing module 'gpn' [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_cla.v:112]
+INFO: [Synth 8-6155] done synthesizing module 'gpn' (0#1) [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_cla.v:112]
+INFO: [Synth 8-6157] synthesizing module 'gp4' [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_cla.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'gp4' (0#1) [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_cla.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'cla16' (0#1) [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_cla.v:68]
+INFO: [Synth 8-6157] synthesizing module 'Nbit_reg__parameterized0' [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/register.v:14]
+	Parameter n bound to: 16 - type: integer 
+	Parameter r bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'Nbit_reg__parameterized0' (0#1) [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/register.v:14]
+INFO: [Synth 8-6157] synthesizing module 'Nbit_reg__parameterized1' [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/register.v:14]
+	Parameter n bound to: 3 - type: integer 
+	Parameter r bound to: 3'b000 
+INFO: [Synth 8-6155] done synthesizing module 'Nbit_reg__parameterized1' (0#1) [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/register.v:14]
+INFO: [Synth 8-6157] synthesizing module 'Nbit_reg__parameterized2' [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/register.v:14]
+	Parameter n bound to: 1 - type: integer 
+	Parameter r bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'Nbit_reg__parameterized2' (0#1) [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/register.v:14]
+INFO: [Synth 8-6157] synthesizing module 'Nbit_reg__parameterized3' [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/register.v:14]
+	Parameter n bound to: 2 - type: integer 
+	Parameter r bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'Nbit_reg__parameterized3' (0#1) [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/register.v:14]
+INFO: [Synth 8-6157] synthesizing module 'lc4_regfile_ss' [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_regfile_ss.v:20]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Nbit_reg__parameterized4' [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/register.v:14]
+	Parameter n bound to: 16 - type: integer 
+	Parameter r bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Nbit_reg__parameterized4' (0#1) [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/register.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'lc4_regfile_ss' (0#1) [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_regfile_ss.v:20]
+INFO: [Synth 8-6157] synthesizing module 'lc4_alu' [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_alu.v:7]
+INFO: [Synth 8-6157] synthesizing module 'lc4_divider' [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_divider.v:7]
+INFO: [Synth 8-6157] synthesizing module 'lc4_divider_one_iter' [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_divider.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'lc4_divider_one_iter' (0#1) [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_divider.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'lc4_divider' (0#1) [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_divider.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'lc4_alu' (0#1) [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_alu.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'lc4_processor' (0#1) [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_superscalar.v:31]
+WARNING: [Synth 8-3848] Net a_mux[3] in module/entity lc4_alu does not have driver. [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_alu.v:18]
+WARNING: [Synth 8-3848] Net a_mux[11] in module/entity lc4_alu does not have driver. [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_alu.v:18]
+WARNING: [Synth 8-3848] Net a_mux[14] in module/entity lc4_alu does not have driver. [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_alu.v:18]
+WARNING: [Synth 8-3848] Net b_mux[3] in module/entity lc4_alu does not have driver. [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_alu.v:18]
+WARNING: [Synth 8-3848] Net b_mux[11] in module/entity lc4_alu does not have driver. [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_alu.v:18]
+WARNING: [Synth 8-3848] Net b_mux[14] in module/entity lc4_alu does not have driver. [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_alu.v:18]
+WARNING: [Synth 8-3848] Net led_data in module/entity lc4_processor does not have driver. [D:/vivado_projects/lc4_superscalar/lc4_superscalar.srcs/sources_1/new/lc4_superscalar.v:71]
+WARNING: [Synth 8-7129] Port led_data[7] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_data[6] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_data[5] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_data[4] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_data[3] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_data[2] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_data[1] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_data[0] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch_data[7] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch_data[6] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch_data[5] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch_data[4] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch_data[3] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch_data[2] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch_data[1] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch_data[0] in module lc4_processor is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1771.418 ; gain = 493.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1771.418 ; gain = 493.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1771.418 ; gain = 493.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1797.895 ; gain = 519.965
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   16 Bit       Adders := 32    
++---XORs : 
+	   2 Input     16 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 128   
++---Registers : 
+	               16 Bit    Registers := 51    
+	                3 Bit    Registers := 25    
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 72    
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 116   
+	   4 Input   16 Bit        Muxes := 6     
+	  12 Input   16 Bit        Muxes := 2     
+	   5 Input   16 Bit        Muxes := 2     
+	   8 Input   16 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 31    
+	  16 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 54    
+	  16 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP a_mux[1]1, operation Mode is: A*B.
+DSP Report: operator a_mux[1]1 is absorbed into DSP a_mux[1]1.
+DSP Report: Generating DSP a_mux[1]1, operation Mode is: A*B.
+DSP Report: operator a_mux[1]1 is absorbed into DSP a_mux[1]1.
+WARNING: [Synth 8-7129] Port i_remainder[15] in module lc4_divider_one_iter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_quotient[15] in module lc4_divider_one_iter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_data[7] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_data[6] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_data[5] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_data[4] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_data[3] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_data[2] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_data[1] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_data[0] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch_data[7] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch_data[6] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch_data[5] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch_data[4] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch_data[3] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch_data[2] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch_data[1] in module lc4_processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch_data[0] in module lc4_processor is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:40 . Memory (MB): peak = 2315.809 ; gain = 1037.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|lc4_alu     | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|lc4_alu     | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:41 . Memory (MB): peak = 2315.809 ; gain = 1037.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:43 . Memory (MB): peak = 2315.809 ; gain = 1037.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:46 . Memory (MB): peak = 2315.809 ; gain = 1037.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:46 . Memory (MB): peak = 2315.809 ; gain = 1037.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:47 . Memory (MB): peak = 2315.809 ; gain = 1037.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:47 . Memory (MB): peak = 2315.809 ; gain = 1037.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:47 . Memory (MB): peak = 2315.809 ; gain = 1037.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:47 . Memory (MB): peak = 2315.809 ; gain = 1037.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|lc4_alu     | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|lc4_alu     | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |   240|
+|3     |DSP48E1 |     2|
+|4     |LUT1    |    37|
+|5     |LUT2    |   263|
+|6     |LUT3    |   438|
+|7     |LUT4    |   691|
+|8     |LUT5    |   794|
+|9     |LUT6    |  1641|
+|10    |MUXF7   |    64|
+|11    |FDRE    |   839|
+|12    |FDSE    |    10|
+|13    |IBUF    |    51|
+|14    |OBUF    |   231|
+|15    |OBUFT   |     8|
++------+--------+------+
+
+Report Instance Areas: 
++------+------------------------------------+-----------------------------+------+
+|      |Instance                            |Module                       |Cells |
++------+------------------------------------+-----------------------------+------+
+|1     |top                                 |                             |  5310|
+|2     |  alu_inst_A                        |lc4_alu                      |   108|
+|3     |    div1                            |lc4_divider_138              |   107|
+|4     |      \genblk1[0].div1              |lc4_divider_one_iter_139     |     2|
+|5     |      \genblk1[10].div1             |lc4_divider_one_iter_140     |     7|
+|6     |      \genblk1[11].div1             |lc4_divider_one_iter_141     |     7|
+|7     |      \genblk1[12].div1             |lc4_divider_one_iter_142     |     7|
+|8     |      \genblk1[13].div1             |lc4_divider_one_iter_143     |     8|
+|9     |      \genblk1[14].div1             |lc4_divider_one_iter_144     |     7|
+|10    |      \genblk1[15].div1             |lc4_divider_one_iter_145     |     6|
+|11    |      \genblk1[1].div1              |lc4_divider_one_iter_146     |     7|
+|12    |      \genblk1[2].div1              |lc4_divider_one_iter_147     |     7|
+|13    |      \genblk1[3].div1              |lc4_divider_one_iter_148     |     7|
+|14    |      \genblk1[4].div1              |lc4_divider_one_iter_149     |     7|
+|15    |      \genblk1[5].div1              |lc4_divider_one_iter_150     |     7|
+|16    |      \genblk1[6].div1              |lc4_divider_one_iter_151     |     7|
+|17    |      \genblk1[7].div1              |lc4_divider_one_iter_152     |     7|
+|18    |      \genblk1[8].div1              |lc4_divider_one_iter_153     |     7|
+|19    |      \genblk1[9].div1              |lc4_divider_one_iter_154     |     7|
+|20    |  alu_inst_B                        |lc4_alu_0                    |   107|
+|21    |    div1                            |lc4_divider                  |   106|
+|22    |      \genblk1[0].div1              |lc4_divider_one_iter         |     2|
+|23    |      \genblk1[10].div1             |lc4_divider_one_iter_123     |     8|
+|24    |      \genblk1[11].div1             |lc4_divider_one_iter_124     |     8|
+|25    |      \genblk1[12].div1             |lc4_divider_one_iter_125     |     6|
+|26    |      \genblk1[13].div1             |lc4_divider_one_iter_126     |     6|
+|27    |      \genblk1[14].div1             |lc4_divider_one_iter_127     |     7|
+|28    |      \genblk1[15].div1             |lc4_divider_one_iter_128     |     6|
+|29    |      \genblk1[1].div1              |lc4_divider_one_iter_129     |     7|
+|30    |      \genblk1[2].div1              |lc4_divider_one_iter_130     |     6|
+|31    |      \genblk1[3].div1              |lc4_divider_one_iter_131     |     7|
+|32    |      \genblk1[4].div1              |lc4_divider_one_iter_132     |     6|
+|33    |      \genblk1[5].div1              |lc4_divider_one_iter_133     |     7|
+|34    |      \genblk1[6].div1              |lc4_divider_one_iter_134     |     7|
+|35    |      \genblk1[7].div1              |lc4_divider_one_iter_135     |     7|
+|36    |      \genblk1[8].div1              |lc4_divider_one_iter_136     |     7|
+|37    |      \genblk1[9].div1              |lc4_divider_one_iter_137     |     9|
+|38    |  dec_a_pipeline_insn               |Nbit_reg__parameterized0     |    16|
+|39    |  dec_a_pipeline_is_branch          |Nbit_reg__parameterized2     |     5|
+|40    |  dec_a_pipeline_is_control_insn    |Nbit_reg__parameterized2_1   |     1|
+|41    |  dec_a_pipeline_is_load            |Nbit_reg__parameterized2_2   |     1|
+|42    |  dec_a_pipeline_is_stall           |Nbit_reg__parameterized3     |     2|
+|43    |  dec_a_pipeline_is_store           |Nbit_reg__parameterized2_3   |     1|
+|44    |  dec_a_pipeline_nzp_we             |Nbit_reg__parameterized2_4   |     1|
+|45    |  dec_a_pipeline_pc                 |Nbit_reg__parameterized0_5   |    16|
+|46    |  dec_a_pipeline_pc_plus_one        |Nbit_reg__parameterized0_6   |    16|
+|47    |  dec_a_pipeline_r1re               |Nbit_reg__parameterized2_7   |     1|
+|48    |  dec_a_pipeline_r1sel              |Nbit_reg__parameterized1     |     8|
+|49    |  dec_a_pipeline_r2re               |Nbit_reg__parameterized2_8   |     3|
+|50    |  dec_a_pipeline_r2sel              |Nbit_reg__parameterized1_9   |     6|
+|51    |  dec_a_pipeline_regfile_we         |Nbit_reg__parameterized2_10  |     5|
+|52    |  dec_a_pipeline_select_pc_plus_one |Nbit_reg__parameterized2_11  |     1|
+|53    |  dec_a_pipeline_wsel               |Nbit_reg__parameterized1_12  |     3|
+|54    |  dec_b_pipeline_insn               |Nbit_reg__parameterized0_13  |    32|
+|55    |  dec_b_pipeline_is_branch          |Nbit_reg__parameterized2_14  |     8|
+|56    |  dec_b_pipeline_is_control_insn    |Nbit_reg__parameterized2_15  |     3|
+|57    |  dec_b_pipeline_is_load            |Nbit_reg__parameterized2_16  |     3|
+|58    |  dec_b_pipeline_is_stall           |Nbit_reg__parameterized3_17  |     2|
+|59    |  dec_b_pipeline_is_store           |Nbit_reg__parameterized2_18  |     2|
+|60    |  dec_b_pipeline_nzp_we             |Nbit_reg__parameterized2_19  |     3|
+|61    |  dec_b_pipeline_pc                 |Nbit_reg__parameterized0_20  |    32|
+|62    |  dec_b_pipeline_pc_plus_one        |Nbit_reg__parameterized0_21  |    16|
+|63    |  dec_b_pipeline_r1re               |Nbit_reg__parameterized2_22  |     4|
+|64    |  dec_b_pipeline_r1sel              |Nbit_reg__parameterized1_23  |    17|
+|65    |  dec_b_pipeline_r2re               |Nbit_reg__parameterized2_24  |    11|
+|66    |  dec_b_pipeline_r2sel              |Nbit_reg__parameterized1_25  |    60|
+|67    |  dec_b_pipeline_regfile_we         |Nbit_reg__parameterized2_26  |     3|
+|68    |  dec_b_pipeline_select_pc_plus_one |Nbit_reg__parameterized2_27  |     2|
+|69    |  dec_b_pipeline_wsel               |Nbit_reg__parameterized1_28  |     8|
+|70    |  exc_a_piplne_a                    |Nbit_reg__parameterized0_29  |    24|
+|71    |  exc_a_piplne_b                    |Nbit_reg__parameterized0_30  |    25|
+|72    |  exc_a_piplne_insn                 |Nbit_reg__parameterized0_31  |   502|
+|73    |  exc_a_piplne_is_branch            |Nbit_reg__parameterized2_32  |     1|
+|74    |  exc_a_piplne_is_control_insn      |Nbit_reg__parameterized2_33  |     1|
+|75    |  exc_a_piplne_is_load              |Nbit_reg__parameterized2_34  |     1|
+|76    |  exc_a_piplne_is_store             |Nbit_reg__parameterized2_35  |     1|
+|77    |  exc_a_piplne_nzp_we               |Nbit_reg__parameterized2_36  |     1|
+|78    |  exc_a_piplne_pc_plus_one          |Nbit_reg__parameterized0_37  |    16|
+|79    |  exc_a_piplne_pc_reg               |Nbit_reg__parameterized0_38  |    16|
+|80    |  exc_a_piplne_r1re                 |Nbit_reg__parameterized2_39  |     8|
+|81    |  exc_a_piplne_r1sel                |Nbit_reg__parameterized1_40  |   290|
+|82    |  exc_a_piplne_r2re                 |Nbit_reg__parameterized2_41  |     3|
+|83    |  exc_a_piplne_r2sel                |Nbit_reg__parameterized1_42  |     6|
+|84    |  exc_a_piplne_regfile_we           |Nbit_reg__parameterized2_43  |     1|
+|85    |  exc_a_piplne_select_pc_plus_one   |Nbit_reg__parameterized2_44  |     1|
+|86    |  exc_a_piplne_test_stall           |Nbit_reg__parameterized3_45  |     2|
+|87    |  exc_a_piplne_wsel                 |Nbit_reg__parameterized1_46  |     5|
+|88    |  exc_b_piplne_a                    |Nbit_reg__parameterized0_47  |    20|
+|89    |  exc_b_piplne_b                    |Nbit_reg__parameterized0_48  |    24|
+|90    |  exc_b_piplne_insn                 |Nbit_reg__parameterized0_49  |   426|
+|91    |  exc_b_piplne_is_branch            |Nbit_reg__parameterized2_50  |     1|
+|92    |  exc_b_piplne_is_control_insn      |Nbit_reg__parameterized2_51  |     1|
+|93    |  exc_b_piplne_is_load              |Nbit_reg__parameterized2_52  |     1|
+|94    |  exc_b_piplne_is_store             |Nbit_reg__parameterized2_53  |     1|
+|95    |  exc_b_piplne_nzp_we               |Nbit_reg__parameterized2_54  |     1|
+|96    |  exc_b_piplne_pc                   |Nbit_reg__parameterized0_55  |    16|
+|97    |  exc_b_piplne_pc_plus_one          |Nbit_reg__parameterized0_56  |    16|
+|98    |  exc_b_piplne_r1re                 |Nbit_reg__parameterized2_57  |    15|
+|99    |  exc_b_piplne_r1sel                |Nbit_reg__parameterized1_58  |   159|
+|100   |  exc_b_piplne_r2re                 |Nbit_reg__parameterized2_59  |     2|
+|101   |  exc_b_piplne_r2sel                |Nbit_reg__parameterized1_60  |     8|
+|102   |  exc_b_piplne_regfile_we           |Nbit_reg__parameterized2_61  |     1|
+|103   |  exc_b_piplne_select_pc_plus_one   |Nbit_reg__parameterized2_62  |     1|
+|104   |  exc_b_piplne_test_stall           |Nbit_reg__parameterized3_63  |     2|
+|105   |  exc_b_piplne_wsel                 |Nbit_reg__parameterized1_64  |    10|
+|106   |  mem_a_pipeline_b                  |Nbit_reg__parameterized0_65  |    16|
+|107   |  mem_a_pipeline_insn               |Nbit_reg__parameterized0_66  |    17|
+|108   |  mem_a_pipeline_is_load            |Nbit_reg__parameterized2_67  |     1|
+|109   |  mem_a_pipeline_is_store           |Nbit_reg__parameterized2_68  |    31|
+|110   |  mem_a_pipeline_nzp_we             |Nbit_reg__parameterized2_69  |     2|
+|111   |  mem_a_pipeline_out                |Nbit_reg__parameterized0_70  |    16|
+|112   |  mem_a_pipeline_pc                 |Nbit_reg__parameterized0_71  |    16|
+|113   |  mem_a_pipeline_pc_plus_one        |Nbit_reg__parameterized0_72  |    73|
+|114   |  mem_a_pipeline_r2sel              |Nbit_reg__parameterized1_73  |     4|
+|115   |  mem_a_pipeline_regfile_we         |Nbit_reg__parameterized2_74  |     3|
+|116   |  mem_a_pipeline_select_pc_plus_one |Nbit_reg__parameterized2_75  |     1|
+|117   |  mem_a_pipeline_test_stall         |Nbit_reg__parameterized3_76  |     2|
+|118   |  mem_a_pipeline_wsel               |Nbit_reg__parameterized1_77  |     5|
+|119   |  mem_b_pipeline_b                  |Nbit_reg__parameterized0_78  |    16|
+|120   |  mem_b_pipeline_insn               |Nbit_reg__parameterized0_79  |    16|
+|121   |  mem_b_pipeline_is_load            |Nbit_reg__parameterized2_80  |    64|
+|122   |  mem_b_pipeline_is_store           |Nbit_reg__parameterized2_81  |    16|
+|123   |  mem_b_pipeline_nzp_we             |Nbit_reg__parameterized2_82  |     1|
+|124   |  mem_b_pipeline_out                |Nbit_reg__parameterized0_83  |    32|
+|125   |  mem_b_pipeline_pc                 |Nbit_reg__parameterized0_84  |    16|
+|126   |  mem_b_pipeline_pc_plus_one        |Nbit_reg__parameterized0_85  |   169|
+|127   |  mem_b_pipeline_r2sel              |Nbit_reg__parameterized1_86  |     6|
+|128   |  mem_b_pipeline_regfile_we         |Nbit_reg__parameterized2_87  |     2|
+|129   |  mem_b_pipeline_select_pc_plus_one |Nbit_reg__parameterized2_88  |     1|
+|130   |  mem_b_pipeline_test_stall         |Nbit_reg__parameterized3_89  |     2|
+|131   |  mem_b_pipeline_wsel               |Nbit_reg__parameterized1_90  |    23|
+|132   |  nzp_reg                           |Nbit_reg__parameterized1_91  |     6|
+|133   |  pc_reg                            |Nbit_reg                     |    94|
+|134   |  registers                         |lc4_regfile_ss               |   385|
+|135   |    reg0                            |Nbit_reg__parameterized4     |    16|
+|136   |    reg1                            |Nbit_reg__parameterized4_116 |    16|
+|137   |    reg2                            |Nbit_reg__parameterized4_117 |    16|
+|138   |    reg3                            |Nbit_reg__parameterized4_118 |   208|
+|139   |    reg4                            |Nbit_reg__parameterized4_119 |    16|
+|140   |    reg5                            |Nbit_reg__parameterized4_120 |    16|
+|141   |    reg6                            |Nbit_reg__parameterized4_121 |    16|
+|142   |    reg7                            |Nbit_reg__parameterized4_122 |    81|
+|143   |  wb_a_pipeline_data                |Nbit_reg__parameterized0_92  |    54|
+|144   |  wb_a_pipeline_insn                |Nbit_reg__parameterized0_93  |    16|
+|145   |  wb_a_pipeline_is_load             |Nbit_reg__parameterized2_94  |     1|
+|146   |  wb_a_pipeline_is_store            |Nbit_reg__parameterized2_95  |     1|
+|147   |  wb_a_pipeline_nzp_we              |Nbit_reg__parameterized2_96  |     1|
+|148   |  wb_a_pipeline_out                 |Nbit_reg__parameterized0_97  |    32|
+|149   |  wb_a_pipeline_pc                  |Nbit_reg__parameterized0_98  |    16|
+|150   |  wb_a_pipeline_pc_plus_one         |Nbit_reg__parameterized0_99  |    56|
+|151   |  wb_a_pipeline_regfile_we          |Nbit_reg__parameterized2_100 |     6|
+|152   |  wb_a_pipeline_select_pc_plus_one  |Nbit_reg__parameterized2_101 |     1|
+|153   |  wb_a_pipeline_test_stall          |Nbit_reg__parameterized3_102 |     2|
+|154   |  wb_a_pipeline_wsel                |Nbit_reg__parameterized1_103 |    12|
+|155   |  wb_b_pipeline_data                |Nbit_reg__parameterized0_104 |   108|
+|156   |  wb_b_pipeline_insn                |Nbit_reg__parameterized0_105 |    16|
+|157   |  wb_b_pipeline_is_load             |Nbit_reg__parameterized2_106 |     1|
+|158   |  wb_b_pipeline_is_store            |Nbit_reg__parameterized2_107 |     1|
+|159   |  wb_b_pipeline_nzp_we              |Nbit_reg__parameterized2_108 |     1|
+|160   |  wb_b_pipeline_out                 |Nbit_reg__parameterized0_109 |    32|
+|161   |  wb_b_pipeline_pc                  |Nbit_reg__parameterized0_110 |    16|
+|162   |  wb_b_pipeline_pc_plus_one         |Nbit_reg__parameterized0_111 |  1346|
+|163   |  wb_b_pipeline_regfile_we          |Nbit_reg__parameterized2_112 |     6|
+|164   |  wb_b_pipeline_select_pc_plus_one  |Nbit_reg__parameterized2_113 |     1|
+|165   |  wb_b_pipeline_test_stall          |Nbit_reg__parameterized3_114 |     2|
+|166   |  wb_b_pipeline_wsel                |Nbit_reg__parameterized1_115 |   139|
++------+------------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:47 . Memory (MB): peak = 2315.809 ; gain = 1037.879
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 42 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:47 . Memory (MB): peak = 2315.809 ; gain = 1037.879
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:47 . Memory (MB): peak = 2315.809 ; gain = 1037.879
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 2315.809 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 306 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2315.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: d4659bd
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:53 . Memory (MB): peak = 2315.809 ; gain = 1045.188
+INFO: [Common 17-1381] The checkpoint 'D:/vivado_projects/lc4_superscalar/lc4_superscalar.runs/synth_1/lc4_processor.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lc4_processor_utilization_synth.rpt -pb lc4_processor_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  1 04:47:18 2023...

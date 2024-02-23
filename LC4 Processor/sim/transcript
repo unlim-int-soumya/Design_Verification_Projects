@@ -1,0 +1,70 @@
+# 
+# 
+# 
+# 
+# //  Questa Sim-64
+# //  Version 10.6c win64 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {C:\questasim64_10.6c\lc4_pipeline\sim\custom_script.do}
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 01:50:35 on Feb 23,2024
+# vlog -reportprogress 300 ../design/lc4_pipeline.v ../sim/testbench.sv "+incdir+common" "+incdir+design/include" "+incdir+design" "+incdir+env" "+incdir+design" "+incdir+test_data" 
+# -- Compiling module halfadder
+# -- Compiling module partial_adder
+# -- Compiling module gp1
+# -- Compiling module gp4
+# -- Compiling module cla16
+# -- Compiling module gpn
+# -- Compiling module lc4_divider
+# -- Compiling module lc4_divider_one_iter
+# -- Compiling module lc4_alu
+# -- Compiling module lc4_decoder
+# -- Compiling module dec_3to8
+# -- Compiling module N_bit_mux8to1
+# -- Compiling module lc4_regfile
+# -- Compiling module pipeline_reg
+# -- Compiling module test_nzp
+# -- Compiling module lc4_processor
+# -- Compiling module count
+# -- Compiling module lc4_we_gen
+# -- Compiling module bram
+# -- Compiling module Nbit_reg
+# -- Compiling module delay_eight_cycles
+# -- Compiling module lc4_memory
+# -- Compiling interface lc4_interface
+# ** Warning: ** while parsing file included at ../sim/testbench.sv(15)
+# ** at ../common/lc4_interface.sv(3): (vlog-2892) Net type of 'clk' must be explicitly declared.
+# ** Warning: ** while parsing file included at ../sim/testbench.sv(15)
+# ** at ../common/lc4_interface.sv(3): (vlog-2892) Net type of 'rst' must be explicitly declared.
+# -- Compiling module lc4_assertion
+# ** Note: (vlog-2286) ../env/lc4_package.sv(1): Using implicit +incdir+C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# ** Warning: ** while parsing file included at ../sim/testbench.sv(21)
+# ** while parsing file included at ../env/lc4_package.sv(9)
+# ** at ..\env\lc4_seqs.sv(412): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: ..\env\lc4_seqs.sv(412): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling package testbench_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package lc4_pkg
+# ** Warning: ..\env\lc4_seqs.sv(412): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling package lc4_pkg
+# ** Warning: ..\env\lc4_seqs.sv(412): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	test_nzp
+# 	tb_top
+# End time: 01:50:36 on Feb 23,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 6
+# store_load_no_depen_test
+# store_load_no_depen_test_2024-02-23_01-50-36.log

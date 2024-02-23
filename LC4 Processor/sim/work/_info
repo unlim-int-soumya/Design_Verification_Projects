@@ -1,0 +1,676 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/questasim64_10.6c/lc4_processor/sim
+vbram
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 @Kk0T3IkXz940fO=1PdYk0
+I?AF;]_5i@jJ`:YeoWRc0S3
+Z3 !s105 testbench_sv_unit
+S1
+Z4 dC:/questasim64_10.6c/lc4_pipeline/sim
+w1699916939
+8..\design\include\bram.v
+Z5 F..\design\include\bram.v
+L0 7
+Z6 OL;L;10.6c;65
+Z7 !s108 1708672087.000000
+Z8 !s107 lc4_test_lib.sv|..\env\lc4_env.sv|..\env\lc4_cov.sv|..\env\lc4_agent.sv|..\env\lc4_scoreboard.sv|..\env\insn_validator.sv|..\env\lc4_monitor.sv|..\env\lc4_driver.sv|..\env\lc4_sequencer.sv|..\env\lc4_seqs.sv|..\env\insn_decode.sv|..\env\lc4_tx.sv|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh|../env/lc4_package.sv|lc4_assertion.sv|../common/lc4_interface.sv|..\design\include\register.v|..\design\include\delay_eight_cycles.v|..\design\include\bram.v|../design/include/lc4_memory.v|../design/include/clock_util.v|..\design\lc4_regfile.v|..\design\lc4_decoder.v|..\design\lc4_divider.v|..\design\lc4_cla.v|..\design\lc4_alu.v|../sim/testbench.sv|../design/lc4_pipeline.v|
+Z9 !s90 -reportprogress|300|../design/lc4_pipeline.v|../sim/testbench.sv|+incdir+common|+incdir+design/include|+incdir+design|+incdir+env|+incdir+design|+incdir+test_data|
+!i113 0
+Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 !s92 +incdir+common +incdir+design/include +incdir+design +incdir+env +incdir+design +incdir+test_data -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z12 tCvgOpt 0
+vcla16
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 oLMlcfH82[<?VZg<<VeS@3
+IiURgkbMLUKgDoLk<zOeeT0
+R4
+Z13 w1696466375
+Z14 8..\design\lc4_cla.v
+Z15 F..\design\lc4_cla.v
+L0 68
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+vcount
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 fzb:]Xb[K]WZWDKGL[fmS2
+I1ASPU9W@4CTa6a74:M@:;0
+R3
+S1
+R4
+Z16 w1698871975
+Z17 8../design/include/clock_util.v
+Z18 F../design/include/clock_util.v
+L0 6
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+vdec_3to8
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 j4aJ7Ui>TK`9ad[eiV_<62
+IKTz<8T;IO2ShoIYC:9<O]2
+R4
+Z19 w1699862128
+Z20 8..\design\lc4_regfile.v
+Z21 F..\design\lc4_regfile.v
+Z22 L0 12
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+vdelay_eight_cycles
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 i06n:;mAIfiR_AE;f=1fR2
+I[e[M2FmJl@DNPJ6`hAJd70
+R3
+S1
+R4
+w1698870553
+8..\design\include\delay_eight_cycles.v
+Z23 F..\design\include\delay_eight_cycles.v
+L0 6
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+vgp1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 ?3=@KMgn<Jk2n:DVJbSTY3
+IXMmWK9CH24PN0eFk61[SB2
+R4
+R13
+R14
+R15
+L0 35
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+vgp4
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 F0UOLIRRJ3A=n46EKJ7<b0
+IUPhY3Y^D[;bTQ34kjP`[P1
+R4
+R13
+R14
+R15
+L0 50
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+vgpn
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 DO?_KL61HgVJWDXOkGSXD1
+I_COGRGNk?2[28k:U[L_1K1
+R4
+R13
+R14
+R15
+L0 112
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+vhalfadder
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 9XdBe2Z^@3AcmUPA[:Fk:0
+IDE;Jznz9YB^m318n^a[W51
+R4
+R13
+R14
+R15
+L0 9
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+vlc4_alu
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 ?;b0AgYg^Uom<:elJCDcZ1
+IScoVL=^JReX0@C4UgoClY2
+R4
+Z24 w1696466376
+8..\design\lc4_alu.v
+F..\design\lc4_alu.v
+L0 11
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+vlc4_assertion
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 Hc]iH<@:lfn6`[4N`ZzlW1
+IaAO@Ik0heKDE7gVGn]an92
+R3
+S1
+R4
+Z25 w1708672082
+8lc4_assertion.sv
+Z26 Flc4_assertion.sv
+L0 1
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+vlc4_decoder
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 ZQkb<Nbmc4<n:?zFR1f4H3
+I@CaW82`6j[cJ[0@I18_f^0
+R4
+R13
+8..\design\lc4_decoder.v
+F..\design\lc4_decoder.v
+L0 4
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+vlc4_divider
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 j:m96zVD9?k[foC3j3D_X0
+ISIB>XA6T>916khimCQW?80
+R4
+R24
+Z27 8..\design\lc4_divider.v
+Z28 F..\design\lc4_divider.v
+L0 7
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+vlc4_divider_one_iter
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 <PYd;@eYImIRi8cNj_ITC2
+IJgUlMP36zVl1an2TgE7cW3
+R4
+R24
+R27
+R28
+L0 32
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+Ylc4_interface
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 mh?g1?B?YZe=E][9ESdHJ0
+IYA@G6hlJV>:cWEl_NX>oO0
+R3
+S1
+R4
+w1708648091
+8../common/lc4_interface.sv
+Z29 F../common/lc4_interface.sv
+L0 3
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+vlc4_memory
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 P^JJHO:EN7I`HYgM^:F4`1
+I`YXcHBjEmQTcm4_:iO1;=2
+R3
+S1
+R4
+w1699916406
+8../design/include/lc4_memory.v
+Z30 F../design/include/lc4_memory.v
+R22
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+Xlc4_pkg
+Z31 !s115 lc4_interface
+R1
+Z32 DXx6 mtiUvm 7 uvm_pkg 0 22 oMKUklN?>LE6@MJe7=2><1
+V>e;_1ZAzNhY6a:OYR8l4>2
+r1
+!s85 0
+31
+!i10b 1
+!s100 KfM:;@c3j5^V3ld4UXdoB3
+I>e;_1ZAzNhY6a:OYR8l4>2
+S1
+R4
+w1708650991
+Z33 F../env/lc4_package.sv
+F..\env\lc4_tx.sv
+Z34 FC:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh
+F..\env\insn_decode.sv
+F..\env\lc4_seqs.sv
+F..\env\lc4_sequencer.sv
+F..\env\lc4_driver.sv
+F..\env\lc4_monitor.sv
+F..\env\insn_validator.sv
+F..\env\lc4_scoreboard.sv
+F..\env\lc4_agent.sv
+F..\env\lc4_cov.sv
+F..\env\lc4_env.sv
+L0 4
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+vlc4_processor
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 Mlk8AR;hQhT?985L;ZTol0
+I_9;PTLR?Gf9WT7R?_69_F0
+R4
+Z35 w1707935615
+Z36 8../design/lc4_pipeline.v
+Z37 F../design/lc4_pipeline.v
+L0 125
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+vlc4_regfile
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 Y:YT:oHb>E67S9Z4Y6UN41
+I6>[6SN9LDQ^TT<lM0[jYE1
+R4
+R19
+R20
+R21
+L0 62
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+vlc4_regfile_ss
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 ciiOfSi0RFMM8>DlV4hHS2
+IgY1JSo9EAaP=H5l[SWR672
+!s105 design_sv_unit
+S1
+R0
+w1698711373
+8../design/lc4_regfile_ss.v
+F../design/lc4_regfile_ss.v
+L0 22
+R6
+!s108 1699763679.000000
+!s107 lc4_test_lib.sv|../env/lc4_env.sv|../env/lc4_agent.sv|../env/lc4_monitor.sv|../env/lc4_driver.sv|../env/lc4_sequencer.sv|../env/lc4_seqs.sv|../env/lc4_tx.sv|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh|C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh|../env/lc4_package.sv|../common/lc4_interface.sv|../design/include/delay_eight_cycles.v|../design/include/bram.v|../design/include/lc4_memory.v|../design/include/clock_util.v|../design/include/register.v|../design/lc4_regfile_ss.v|../design/lc4_decoder.v|../design/lc4_divider.v|../design/lc4_cla.v|../design/lc4_alu.v|../sim/testbench.sv|../design/design.sv|
+!s90 -reportprogress|300|../design/design.sv|../sim/testbench.sv|+incdir+../common|+incdir+../design/include|+incdir+../design|+incdir+../env|
+!i113 0
+R10
+!s92 +incdir+../common +incdir+../design/include +incdir+../design +incdir+../env -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R12
+vlc4_we_gen
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 LgMQ<[R^R<bLHUMG6g9VD3
+I02i8g?3GdU=D0ZZVC2^=B1
+R3
+S1
+R4
+R16
+R17
+R18
+L0 20
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+vN_bit_mux8to1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 J]j^9hAhL3egZBNOCN^PU2
+IcEPYL7Ooc;GSadgj[i2Yk2
+R4
+R19
+R20
+R21
+L0 26
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+n@n_bit_mux8to1
+vNbit_reg
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 m36dcl9Oz;[hi6[el;KN@1
+IeoJXlzf?Iml`7j19Loom82
+R3
+S1
+R4
+w1698870533
+8..\design\include\register.v
+Z38 F..\design\include\register.v
+L0 17
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+n@nbit_reg
+vpartial_adder
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 h91^iZE9m4;PH_X6eX>_;2
+I;AbEieO`ZGRlLaQ27lY>P1
+R4
+R13
+R14
+R15
+L0 19
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+vpipeline_reg
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 BBAZL37953D[naf`cFoWe3
+IJKXWGdj3kI^2eE:S5FaPg3
+R4
+R35
+R36
+R37
+L0 7
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+vtb_top
+R1
+R32
+Z39 DXx4 work 7 lc4_pkg 0 22 >e;_1ZAzNhY6a:OYR8l4>2
+DXx4 work 17 testbench_sv_unit 0 22 1:PFLZ`NLh>j]V1`_MA6D2
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 FW28R3FbXDQeRDzDTJgif0
+I1aaW]bTg<V9?eH<ZYZ1jg1
+R3
+S1
+R4
+w1707867605
+Z40 8../sim/testbench.sv
+Z41 F../sim/testbench.sv
+L0 28
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+vtest_nzp
+!s110 1708672087
+!i10b 1
+!s100 zTng:N9=Ng`K9hM^O]QJ?3
+Ih2zg_Q[O60gGgS0faoNc22
+R2
+R4
+R35
+R36
+R37
+L0 86
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
+Xtestbench_sv_unit
+R31
+R1
+R32
+R39
+V1:PFLZ`NLh>j]V1`_MA6D2
+r1
+!s85 0
+31
+!i10b 1
+!s100 di;@79Vz[9j:c89SKIgDT0
+I1:PFLZ`NLh>j]V1`_MA6D2
+!i103 1
+S1
+R4
+R25
+R40
+R41
+R18
+R30
+R5
+R23
+R38
+R29
+R26
+R33
+R34
+FC:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh
+FC:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh
+FC:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh
+FC:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh
+FC:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh
+FC:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh
+FC:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh
+FC:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh
+FC:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh
+FC:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh
+FC:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh
+Flc4_test_lib.sv
+L0 2
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R12
